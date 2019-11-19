@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 2 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Shanti | Home</title>
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/vegas.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container"> <!-- Contenedor ppal -->
+      <header class="main-header">
+        <a id="cd-logo" href="index.html"><img src="img/logo.png" alt="Homepage"></a>
+        <nav id="cd-top-nav">
+          <ul>
+            <li><a href="#0">Home</a></li>
+            <li><a href="#0">Login</a></li>
+          </ul>
+        </nav>
+        <a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
+      </header>
+
+      <main class="cd-main-content">
+
+        <div class="col-md-7 col-sm-7 col-xs-12 col-lg-12">
+          <h2>¡Bienvenido a Shanti Insumos!</h2>
+          <div class="introd">
+            <p>
+              <br>
+              Shanti Insumos es una empresa dedicada a la venta de insumos de yoga, pilates y fitness.
+              Es un espacio en el que encontrarás accesorios de la mejor calidad al mejor precio.
+              Contamos con un amplio stock en productos para clases, accesorios y música.
+              Nuestra experiencia en el rubro nos permite garantizarte seriedad, compromiso y eficiencia.
+              <br>
+              <br>
+              La paz en el cuerpo equilibra la mente.
+              <br>
+              <br>
+            </p>
+
+            <h3>Hoy es un buen día para hacer yoga.</h3>
+            <h3>¡Visitanos y descubrite!</h3>
+          </p>
+        </div>
+      </div>
+        <div class="container-fluid" style="padding-left:0; padding-right:0; background-color: rgba(255, 255, 255, 0.8); padding-top:40px;">
+          <div class="col-sm-4 col-xs-12 col-lg-6 text-center">
+
+          </div>
+        </div>
+      </main>
+
+      <footer class="container">
+        <div class="contacto">
+          <p>Shanti Insumos</p>
+          <p>Telefono: 3815545454</p>
+          <p>Direccion: Cordoba 656</p>
+          <p>Email: shantiinsumos@gmail.com</p>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/vegas.min.js"></script>
+    <script src="responsiveslides.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  </body>
+</html>
