@@ -6,18 +6,16 @@
   /* background-image: url(../img/fondo.jpg); */
 }
 
-.container{
-  padding-left: 0px;
-  padding-right: 0px;
-}
 
 body {
-  background-size:cover;
-  background-image: url(../img/background.jpg);
+  overflow: hidden;
+  background-size: 20%;
+  background-image: url(../img/background10.jpg);
   font-family: 'Vibur', cursive;
   font-family: 'Abel', sans-serif;
   /* font-family: segoe script; */
 }
+
 
 img.logo{
   display: block;
@@ -84,6 +82,7 @@ Main components
 -------------------------------- */
 .cd-main-content {
   /* set a min-height and a z-index to be sure that the main element completely covers the lateral menu */
+  overflow: hidden;
   min-height: 100%;
   position: relative;
   z-index: 2;
@@ -98,14 +97,7 @@ Main components
   -moz-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
-h2 {
-  font-weight: bold;
-  color: white;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 40px;
-}
+
 h5 {
   color: white;
   margin-top: 20px;
@@ -137,7 +129,7 @@ header {
   left: 0;
   height: 50px;
   width: 100%;
-  background-image: linear-gradient(90deg, #FE5A5A, #FE935A);
+  background-image: linear-gradient(90deg, #46DC9E, #558BD3);
   z-index: 3;
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
@@ -218,7 +210,7 @@ header.is-fixed {
   top: 0;
   height: 100%;
   width: 50px;
-  background-color: #FE935A;
+  background-color: (rgba(85, 139, 211,.3) 50%);
 }
 #cd-menu-trigger .cd-menu-text {
   height: 100%;
@@ -310,7 +302,7 @@ header.is-fixed {
   /* the secondary navigation is covered by the main element */
   z-index: 1;
   width: 260px;
-  background-color: #FE935A;
+  background-color: #558BD3;
   overflow-y: auto;
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
@@ -339,11 +331,11 @@ header.is-fixed {
   color: white;
 }
 #cd-lateral-nav a.current {
-  background-color: #F3B27C;
+  background-color: rgb(22, 75, 33);
   color: #FFF;
 }
 .no-touch #cd-lateral-nav a:hover {
-  color: red;
+  color: green;
 }
 @media only screen and (min-width: 768px) {
   #cd-lateral-nav .cd-navigation {
@@ -459,7 +451,7 @@ header.is-fixed {
 div.introd p{
   color: white;
   text-align: justify;
-  font-family: segoe script;
+  font-family: "Titillium Web", sans-serif;
   margin-bottom: 0px;
   font-size: 10px;
 }
@@ -481,7 +473,7 @@ div.col-md-7.col-sm-7.col-xs-12{
   margin-top: 30px;
   padding-left: 5px;
   padding-right: 5px;
-  background-image: linear-gradient(-225deg,rgba(0, 0, 255,.3)  50% ,rgba(255, 0, 0,.3) 50%);
+  background-image: linear-gradient(-225deg,rgba(85, 139, 211,.3) 50% ,rgba(70, 220, 158,.3) 50%);
 }
 
 /* div.col-md-5.col-sm-12.col-xs-12{
@@ -493,7 +485,7 @@ div.col-md-7.col-sm-7.col-xs-12{
 h1{
   display: block;
   text-align: center;
-  font-family: segoe script;
+  font-family: "Titillium Web", sans-serif;
   color: white;
 }
 
@@ -502,7 +494,7 @@ h2{
   text-align: center;
   padding-top: 10px;
   color: white;
-  font-family: segoe script;
+  font-family: "Titillium Web", sans-serif;
   margin-bottom: 0px;
 }
 
@@ -511,7 +503,7 @@ h3{
 
 h3{
   display: block;
-  font-family: segoe script;
+  font-family: "Titillium Web", sans-serif;
   color: white;
   text-align: center;
   font-size: 30px;
@@ -523,18 +515,17 @@ h5{
   display: block;
   text-align: left;
   color: white;
-  font-family: segoe script;
+  font-family: "Titillium Web", sans-serif;
 }
 
 h6{
   display: block;
   color: white;
   text-align: center;
-  font-family: segoe script;
+  font-family:  "Titillium Web", sans-serif;
   margin-bottom: 0px;
   font-size: 25px;
   padding-bottom: 15px;
-  font-family: segoe script;
 }
 
 
@@ -573,7 +564,7 @@ font-size: 15px;
 
 .registrate {
   text-align: center;
-  font-family: 'segoe script';
+  font-family: "Titillium Web", sans-serif;
 }
 
 .reg-info {
@@ -590,7 +581,7 @@ form {
     margin: 2% auto;
     box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
     padding: 2%;
-    background-image: linear-gradient(-225deg, #f995448a 50%, #274d88bf 50%);
+    background-image: linear-gradient(-225deg,rgba(70, 220,158,.5) 50% ,rgba(85, 139, 211,.5) 50%);
 }
 
 .form-container {
@@ -652,7 +643,7 @@ form {
 }
 
 select{
-  font-family: segoe script;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .input-item {
@@ -726,7 +717,7 @@ a.button.product{
 div.ColumnaTextoFaq{
   padding-left: 15px;
   padding-right: 15px;
-  background-image: linear-gradient(-225deg, #f995448a 50%, #274d88bf 50%);
+  background-image: linear-gradient(-225deg, #46DC9E 50%, #558BD3 50%);
   /* background-color: #e85c6a; */
 }
 
@@ -741,7 +732,7 @@ div.Redes{
 .cascada{
   padding-left: 15px;
   color: white;
-  font-family: segoe script;
+  font-family: "Titillium Web", sans-serif;
 }
 
 
@@ -769,56 +760,137 @@ ul.product-categories{
 } */
 
 .title{
-  font-family: segoe script;
+  font-family: "Titillium Web", sans-serif;
   color: white;
   font-size: 20px;
 }
 
 div.storefront{
-  background-image: linear-gradient(-225deg, #f995448a 50%, #274d88bf 50%);
+  background-image: linear-gradient(-225deg, #46DC9E 50%, #558BD3 50%);
 }
 
+/* CONTACTO */
 
-/*CONTACTO*/
-
-section.form-container-contacto col-md-8 col-sm-8 col-xs-12 col-lg-4 {
-  border: solid 3px grey;
-  margin-top: 100px;
+main.cd-main-content-contacto {
   overflow: hidden;
 }
-.access-form-contacto {
-  border: #989898 solid 8px;
-  margin-top: 100px;
+
+.formulario-contacto {
   float: left;
+  position: absolute;
 }
+
+
+.access-form-contacto {
+ margin-top: 100px; 
+ margin-bottom: 0px;
+ overflow: hidden;
+ border-radius:  10px;
+ border: solid #B17A4A 5px;
+ background-image: linear-gradient(-225deg,rgba(70, 220,158,.3) 50% ,rgba(85, 139, 211,.3) 50%);
+}
+
 div.field-group {
-  width: 80%;
+  border-radius: 10px;
   display: block;
   margin: auto;
-  border-radius: 20px;
+  width: 100%;
 }
-div.field-group p{
- margin-bottom:8px;
- margin-top: 8px;
+
+input#nombre{
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+input#email{
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+input#Telefono{
+  border-radius: 10px;
+  display: block;
+  margin: auto;
 }
 textarea#comentarios {
   width: 90%;
-  padding: 10px;
-  color: #989898;
-}
-button.enviar-msj {
+  border-radius: 10px;
   display: block;
   margin: auto;
+  height: 80px;
+  padding: 10px;
+  color: grey;
 }
 
-.cd-main-content-contacto {
-  overflow: hidden;
+div.field-group p {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+button.enviar-msj {
+  opacity: 75%;
+  text-align: center;
+  font-size: 20px;
+  width: 32%;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
 }
 
-.form-container-mapa col-md-8 col-sm-8 col-xs-12 col-lg-6 {
-  float: right;
+.enviar-msj {
+  color: white;
+  text-align: center;
+  background-color: #B17A4A;
+  border-radius: 5px;
+  height: 6%;
+  margin-top: 1px;
+}
+
+#mapa-contacto.col-8 {
+  margin-top:100px;
   position: relative;
+  float: right;
+  border-radius:  10px;
+  border: solid #B17A4A 3px;
+  padding: 0px;
 }
-iframe {
 
+iframe {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius:10px;
+}
+
+
+/*LOGIN*/
+div.col.col-lg-5 h2 {
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+}
+div.col.col-lg-5 h5 {
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+}
+
+div.col.col-lg-5 {
+  margin-top: 20px;
+}
+form.access-form-login{
+  border-radius: 5px;
+  padding: 10px;
+  border: solid 8px grey;
+}
+
+/*REGISTRO*/
+
+div.col.col-lg-6 {
+  margin-top: 20px;
+}
+
+form.access-form-registro {
+  border: solid 8px grey;
+  border-radius: 5px;
+  padding: 10px;
 }
