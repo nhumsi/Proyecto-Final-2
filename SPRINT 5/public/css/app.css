@@ -8,7 +8,7 @@
 
 
 body {
-  overflow: hidden;
+  height: 100%;
   background-size: 20%;
   background-image: url(../img/background10.jpg);
   font-family: 'Vibur', cursive;
@@ -150,7 +150,7 @@ header.lateral-menu-is-open {
   transform: translateX(-260px);
 }
 header.is-fixed {
-  position: fixed;
+  
 }
 @media only screen and (min-width: 768px) {
   header {
@@ -885,12 +885,16 @@ form.access-form-login{
 
 /*REGISTRO*/
 
-div.col.col-lg-6 {
-  margin-top: 20px;
+.form-container-registro {
+  margin-top: 80px;
 }
 
 form.access-form-registro {
-  border: solid 8px grey;
+  border: solid #B17A4A 4px;
   border-radius: 5px;
   padding: 10px;
+}
+
+h3.reg {
+  margin-bottom: 15px;
 }

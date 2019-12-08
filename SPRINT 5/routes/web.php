@@ -30,3 +30,12 @@ Route::get('/contacto', function(){
 Route::get('/catalogo', function(){
     return view('catalogo');
 } );
+
+Route::get('/registro',function(){
+    return view('registro');
+});
+
+Route::post('/registro/guardar', 'RegistroController@guardar');
+
+
+
