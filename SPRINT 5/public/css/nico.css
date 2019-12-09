@@ -3,18 +3,19 @@
   margin: 0 auto;
   padding: 0px;
   box-sizing: border-box;
+  /* background-image: url(../img/fondo.jpg); */
 }
+
 
 body {
-<<<<<<< HEAD
   height: 100%;
-=======
-  /* overflow: hidden; */
->>>>>>> SPRINT5
   background-size: 20%;
-  background-image: url(img/background10.jpg);
-
+  background-image: url(../img/background10.jpg);
+  font-family: 'Vibur', cursive;
+  font-family: 'Abel', sans-serif;
+  /* font-family: segoe script; */
 }
+
 
 img.logo{
   display: block;
@@ -91,6 +92,15 @@ Main components
   transition-duration: 0.4s;
 }
 
+h5 {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+
 .cd-main-content.lateral-menu-is-open {
   /* translate to show the lateral menu - all content needs to be put in the .cd-main-content to translate*/
   -webkit-transform: translateX(-260px);
@@ -134,7 +144,7 @@ header.lateral-menu-is-open {
   transform: translateX(-260px);
 }
 header.is-fixed {
-  
+
 }
 @media only screen and (min-width: 768px) {
   header {
@@ -221,7 +231,6 @@ header.is-fixed {
   background-color: white;
   /* these are the upper and lower lines in the menu menu */
 }
-
 #cd-menu-trigger .cd-menu-icon::before, #cd-menu-trigger .cd-menu-icon:after {
   content: '';
   width: 100%;
@@ -230,23 +239,18 @@ header.is-fixed {
   background-color: inherit;
   left: 0;
 }
-
 #cd-menu-trigger .cd-menu-icon::before {
   bottom: 5px;
 }
-
 #cd-menu-trigger .cd-menu-icon::after {
   top: 5px;
 }
-
 #cd-menu-trigger.is-clicked .cd-menu-icon {
   background-color: rgba(255, 255, 255, 0);
 }
-
 #cd-menu-trigger.is-clicked .cd-menu-icon::before, #cd-menu-trigger.is-clicked .cd-menu-icon::after {
   background-color: white;
 }
-
 #cd-menu-trigger.is-clicked .cd-menu-icon::before {
   bottom: 0;
   -webkit-transform: rotate(45deg);
@@ -255,7 +259,6 @@ header.is-fixed {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
 #cd-menu-trigger.is-clicked .cd-menu-icon::after {
   top: 0;
   -webkit-transform: rotate(-45deg);
@@ -308,28 +311,23 @@ header.is-fixed {
   -o-transform: translateX(80px);
   transform: translateX(80px);
 }
-
 #cd-lateral-nav .cd-navigation {
   margin: 10px 0 16px;
 }
-
 #cd-lateral-nav .sub-menu {
   padding: 0 10px 20px 15px;
   display: none;
 }
-
 #cd-lateral-nav a {
   display: block;
   line-height: 2em;
   padding: 0 16px 0 32px;
   color: white;
 }
-
 #cd-lateral-nav a.current {
   background-color: rgb(22, 75, 33);
   color: #FFF;
 }
-
 .no-touch #cd-lateral-nav a:hover {
   color: green;
 }
@@ -338,7 +336,6 @@ header.is-fixed {
     margin: 20px 0;
   }
 }
-
 #cd-lateral-nav.lateral-menu-is-open {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -360,7 +357,6 @@ header.is-fixed {
   font-weight: 600;
   /* this is the right arrow to show that the item has a submenu  */
 }
-
 #cd-lateral-nav .item-has-children > a::after {
   content: '';
   display: block;
@@ -384,7 +380,6 @@ header.is-fixed {
   -moz-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-
 #cd-lateral-nav .item-has-children > a.submenu-open::after {
   -webkit-transform: translateY(-50%) rotate(90deg);
   -moz-transform: translateY(-50%) rotate(90deg);
@@ -396,54 +391,44 @@ header.is-fixed {
 #cd-lateral-nav .socials {
   padding: 0 32px;
 }
-
 #cd-lateral-nav .socials:after {
   content: "";
   display: table;
   clear: both;
 }
-
 #cd-lateral-nav .socials a {
   height: 32px;
   width: 32px;
   float: left;
   padding: 0;
-  background-image: url("img/cd-socials.svg");
+  background-image: url("../img/cd-socials.svg");
   background-repeat: no-repeat;
   background-size: 128px 64px;
   background-color: #FFF;
   margin-right: .5em;
   border-radius: 0.25em;
 }
-
 #cd-lateral-nav .socials a.cd-twitter {
   background-position: 0 0;
 }
-
 #cd-lateral-nav .socials a.cd-github {
   background-position: -32px 0;
 }
-
 #cd-lateral-nav .socials a.cd-facebook {
   background-position: -64px 0;
 }
-
 #cd-lateral-nav .socials a.cd-google {
   background-position: -96px 0;
 }
-
 .no-touch #cd-lateral-nav .socials a:hover {
   background-color: #4e6361;
 }
-
 .no-touch #cd-lateral-nav .socials a:hover.cd-twitter {
   background-position: 0 -32px;
 }
-
 .no-touch #cd-lateral-nav .socials a:hover.cd-github {
   background-position: -32px -32px;
 }
-
 .no-touch #cd-lateral-nav .socials a:hover.cd-facebook {
   background-position: -64px -32px;
 }
@@ -451,36 +436,44 @@ header.is-fixed {
   background-position: -96px -32px;
 }
 
+
+
+
+
+
+
 div.introd p{
-  /* color: white; */
-  text-align: center;
+  color: white;
+  text-align: justify;
   font-family: "Titillium Web", sans-serif;
   margin-bottom: 0px;
-  font-size: 20px;
+  font-size: 10px;
 }
 
 div.introd{
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+div.introd p {
+  text-align: justify;
+  font-size: 20px;
 }
 
-div.col{
-  border: solid #B17A4A 5px;
+
+div.col-md-7.col-sm-7.col-xs-12{
+  border: solid #989898 10px;
   border-radius: 10px;
   margin-top: 30px;
   padding-left: 5px;
   padding-right: 5px;
-  padding-bottom: 15px;
-  background-color: #4cd2b0;
-  /* background-image: linear-gradient(-225deg,rgba(85, 139, 211,.3) 50% ,rgba(70, 220, 158,.3) 50%); */
+  background-image: linear-gradient(-225deg,rgba(85, 139, 211,.3) 50% ,rgba(70, 220, 158,.3) 50%);
 }
 
 /* div.col-md-5.col-sm-12.col-xs-12{
   padding-left: 15px;
   padding-right: 15px;
-  border: solid #B17A4A 5px;
-  border-radius: 10px;
-  background-image: linear-gradient(-225deg,rgba(85, 139, 211,.3) 50% ,rgba(70, 220, 158,.3) 50%);
+  background-image: linear-gradient(-225deg, #f995448a 50%, #274d88bf 50%);
 } */
 
 h1{
@@ -500,28 +493,28 @@ h2{
 }
 
 h3{
+}
+
+h3{
   display: block;
   font-family: "Titillium Web", sans-serif;
-  /* color: white; */
+  color: white;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 0px;
   padding-top: 10px;
 }
 
-h5 {
+h5{
   display: block;
-  /* color: white; */
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 30px;
+  text-align: left;
+  color: white;
   font-family: "Titillium Web", sans-serif;
 }
 
 h6{
   display: block;
-  /* color: white; */
+  color: white;
   text-align: center;
   font-family:  "Titillium Web", sans-serif;
   margin-bottom: 0px;
@@ -529,30 +522,13 @@ h6{
   padding-bottom: 15px;
 }
 
-/* section{
-  width: 80%;
-  margin: 0 auto;
-} */
 
 div.container-fluid {
 overflow: hidden;
 margin-top: 50px;
-border: solid #B17A4A 5px;
+border: solid #989898 10px;
 border-radius: 10px;
 margin-bottom: 30px;
-width: 100%;
-}
-
-.item {
-      display: block;
-      width: 100%;
-      height: 400px;
-}
-
-
-.item img {
-      height: 100%;
-      width: 100%;
 }
 
 div.col-sm-4.col-xs-12.col-lg-6.text-center {
@@ -566,18 +542,13 @@ div.col-sm-4.col-xs-12.col-lg-6.text-center {
 footer.container{
  overflow: hidden;
  margin-top: 30px;
- border: solid #B17A4A 5px;
+ border: solid #989898 3px;
  border-radius: 10px;
- /* background-color: rgba(255,255,255,.5) */
- background-image: linear-gradient(-225deg,rgba(85, 139, 211,.3) 50% ,rgba(70, 220, 158,.3) 50%);
- /* text-align: center; */
- color: #B17A4A;
+ background-color: rgba(255,255,255,.5)
 }
-
 div.contacto {
 float: right;
 }
-
 div.contacto p {
 margin-bottom: 0px;
 text-align: right;
@@ -712,6 +683,7 @@ button {
     display: inline-block;
     /* width: 280px; */
     height: 50px;
+
     padding: 0 20px;
     border-radius: 5px;
     outline: none;
@@ -723,10 +695,11 @@ button {
 }
 
 
-
 /* QA*/
 
 #cd-top-nav a {
+
+  color: white;
   text-decoration: none;
 }
 
@@ -736,16 +709,10 @@ a.button.product{
 }
 
 div.ColumnaTextoFaq{
-  margin-top: 100px;
-  margin-bottom: 100px;
-  padding-left: 25px;
-  padding-right: 20px;
-  overflow: hidden;
-  border-radius: 10px;
-  border: solid #B17A4A 5px;
-  background-color: #4cd2b0;
-  /* background-image: linear-gradient(-225deg,rgba(70, 220,158,.3) 50% ,rgba(85, 139, 211,.3) 50%); */
-  /* color: #B17A4A; */
+  padding-left: 15px;
+  padding-right: 15px;
+  background-image: linear-gradient(-225deg, #46DC9E 50%, #558BD3 50%);
+  /* background-color: #e85c6a; */
 }
 
 div.Redes{
@@ -762,31 +729,11 @@ div.Redes{
   font-family: "Titillium Web", sans-serif;
 }
 
-form.woocommerce-ordering{
-color: black;
-}
-
-ul.pagination {
-    border: 1px solid rgba(0,0,0,.05);
-    border-width: 1px 0;
-
-}
 
 span{
   color: white;
   /* display: block; */
   text-align: center;
-}
-
-div.site-content{
-  margin-top: 100px;
-  padding-left: 15px;
-  padding-right: 15px;
-  overflow: hidden;
-  border-radius: 10px;
-  border: solid #B17A4A 5px;
-  background-color: #4cd2b0;
-  /* background-image: linear-gradient(-225deg,rgba(70, 220,158,.3) 50% ,rgba(85, 139, 211,.3) 50%); */
 }
 
 /* div.categories{
@@ -807,7 +754,7 @@ ul.product-categories{
 
 .title{
   font-family: "Titillium Web", sans-serif;
-  /* color: white; */
+  color: white;
   font-size: 20px;
 }
 
@@ -825,6 +772,7 @@ main.cd-main-content-contacto {
   float: left;
   position: absolute;
 }
+
 
 .access-form-contacto {
  margin-top: 100px;
@@ -847,19 +795,16 @@ input#nombre{
   display: block;
   margin: auto;
 }
-
 input#email{
   border-radius: 10px;
   display: block;
   margin: auto;
 }
-
 input#Telefono{
   border-radius: 10px;
   display: block;
   margin: auto;
 }
-
 textarea#comentarios {
   width: 90%;
   border-radius: 10px;
@@ -875,7 +820,6 @@ div.field-group p {
   margin-bottom: 5px;
   font-size: 16px;
 }
-
 button.enviar-msj {
   opacity: 75%;
   text-align: center;
@@ -926,7 +870,6 @@ div.col.col-lg-5 h5 {
 div.col.col-lg-5 {
   margin-top: 20px;
 }
-
 form.access-form-login{
   border-radius: 5px;
   padding: 10px;
@@ -935,23 +878,6 @@ form.access-form-login{
 
 /*REGISTRO*/
 
-<<<<<<< HEAD
-.form-container-registro {
-  margin-top: 80px;
-=======
-/* div.col.col-lg-6 {
-  margin-top: 20px;
->>>>>>> SPRINT5
-}
-
-form.access-form-registro {
-  border: solid #B17A4A 4px;
-  border-radius: 5px;
-  padding: 10px;
-<<<<<<< HEAD
-=======
-} */
-
 .form-container-registro {
   margin-top: 80px;
 }
@@ -960,7 +886,6 @@ form.access-form-registro {
   border: solid #B17A4A 4px;
   border-radius: 5px;
   padding: 10px;
->>>>>>> SPRINT5
 }
 
 h3.reg {
