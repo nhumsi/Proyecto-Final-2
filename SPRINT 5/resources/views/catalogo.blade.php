@@ -1,31 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 2 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Shanti | Catálogo</title>
-    <!-- Bootstrap -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/vegas.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/app.css">
-  </head>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<meta name="generator" content="WordPress 4.9.11" />
+<meta name="generator" content="WooCommerce 3.4.5" />
+<!-- <link rel="profile" href="http://gmpg.org/xfn/11"> -->
+<title>Shanti | Catalogo </title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/app.css">
+<link rel='stylesheet' id='storefront-fonts-css'  href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,700,900&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='storefront-woocommerce-style-css'  href='http://yogayfitness.com.ar/compras/wp-content/themes/storefront/assets/sass/woocommerce/woocommerce.css?ver=4.9.11' type='text/css' media='all' />
+	</head>
+
   <body>
-    <div class="container"> <!-- Contenedor ppal -->
-      <header class="main-header"> <!-- Encabezado -->
-        <img src="img/logo.png" class="logo" alt="logotipo">
-        <nav class="navbar navbar-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <a style="color: white;">Menú</a>
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
-        <div class="collapse" id="navbarToggleExternalContent">
+		<div class="container">
+
+      <header class="main-header">
+        <a id="cd-logo" href="catalogo"><img src="css/img/logo.png" alt="Compras"></a>
+        <nav id="cd-top-nav">
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Preguntas frecuentes</a></li>
@@ -34,280 +38,373 @@
             <li><a href="#">Login</a></li>
             <li><a href="#">Contacto</a></li>
           </ul>
-        </div>
+        </nav>
+        <a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
       </header>
 
-      <div class="col-md-7 col-sm-7 col-xs-12">
-        <div id="content" class="site-content" tabindex="-1">
-          <div class="col-full">
-            <nav class="cascada">
-              <a href="#">Inicio</a> &nbsp;&#47;&nbsp; Otros Productos
-            </nav>
-            <!-- <div class="woocommerce"></div> -->
-            <div id="primary" class="content-area">
-              <main id="main" class="site-main" role="main">
-                <header class="woocommerce-products-header">
-                  <h1 class="woocommerce-products-header__title page-title">Productos Yoga</h1>
-                </header>
-              <div class="storefront">
-                <form class="woocommerce-ordering" method="get">
-                  <select name="orderby" class="orderby">
-                    <option value="menu_order"  selected='selected'>Orden predeterminado</option>
-                    <option value="popularity" >Ordenar por popularidad</option>
-                    <option value="rating" >Ordenar por calificación media</option>
-                    <option value="date" >Ordenar por novedades</option>
-                    <option value="price" >Ordenar por precio: bajo a alto</option>
-                    <option value="price-desc" >Ordenar por precio: alto a bajo</option>
-                  </select>
-                  <input type="hidden" name="paged" value="1" />
-                <p class="woocommerce-result-count">
-                  Mostrando todos los resultados (11)
-                </p>
-              </form>
-              <br>
-
-              <ul class="products columns-3">
-                <li class="listas productos">
-                  <a href="#" class="products">
-                    <img src="img/aku ball.jpg" class="post-image" alt="" style="width: 100%;">
-                    <h2 class="product_title">Aku ball</h2>
-                    <span class="price">
-                      <span class="Price-Symbol">&#36;
-                      </span>500.00
-                    </span>
-                  </a>
-                  <a href="#" data-quantity="1" class="button product" data-product_id="403" rel="nofollow">Añadir al carrito</a>
-                </li>
-                <br>
-                <li class="listas productos">
-                  <a href="#" class="products">
-                    <img src="img/bolster.jpg" class="post-image" alt="" style="width: 100%;">
-                    <h2 class="product_title">Bolster</h2>
-                    <span class="price">
-                      <span class="Price-Symbol">&#36;
-                      </span>700.00
-                    </span>
-                  </a>
-                  <a href="#" data-quantity="1" class="button product" data-product_id="403" rel="nofollow">Añadir al carrito</a>
-                </li>
-                <br>
-                <li class="listas productos">
-                  <a href="#" class="products">
-                    <img src="img/cubre mat de yoga.jpg" class="post-image" alt="" style="width: 100%;">
-                    <h2 class="product_title">Cubre mat de yoga</h2>
-                    <span class="price">
-                      <span class="Price-Symbol">&#36;
-                      </span>1000.00
-                    </span>
-                  </a>
-                  <a href="#" data-quantity="1" class="button product" data-product_id="403" rel="nofollow">Añadir al carrito</a>
-                </li>
-                <br>
-                <li class="listas productos">
-                  <a href="#" class="products">
-                    <img src="img/encastrable goma eva.jpg" class="post-image" alt="" style="width: 100%;">
-                    <h2 class="product_title">Encastrable de goma eva</h2>
-                    <span class="price">
-                      <span class="Price-Symbol">&#36;
-                      </span>950.00
-                    </span>
-                  </a>
-                  <a href="#" data-quantity="1" class="button product" data-product_id="403" rel="nofollow">Añadir al carrito</a>
-                </li>
-                <br>
-                <li class="listas productos">
-                  <a href="#" class="products">
-                    <img src="img/fisiobalon.jpg" class="post-image" alt="" style="width: 100%;">
-                    <h2 class="product_title">Fisiobalon</h2>
-                    <span class="price">
-                      <span class="Price-Symbol">&#36;
-                      </span>450.00
-                    </span>
-                  </a>
-                  <a href="#" data-quantity="1" class="button product" data-product_id="403" rel="nofollow">Añadir al carrito</a>
-                </li>
-                <br>
-                <li class="listas productos">
-                  <a href="#" class="products">
-                    <img src="img/hornillo de cerámica.jpg" class="post-image" alt="" style="width: 100%;">
-                    <h2 class="product_title">Hornillo de cerámica</h2>
-                    <span class="price">
-                      <span class="Price-Symbol">&#36;
-                      </span>300.00
-                    </span>
-                  </a>
-                  <a href="#" data-quantity="1" class="button product" data-product_id="403" rel="nofollow">Añadir al carrito</a>
-                </li>
-                <br>
-                <li class="listas productos">
-                  <a href="#" class="products">
-                    <img src="img/jala neti.jpg" class="post-image" alt="" style="width: 100%;">
-                    <h2 class="product_title">Jala neti</h2>
-                    <span class="price">
-                      <span class="Price-Symbol">&#36;
-                      </span>200.00
-                    </span>
-                  </a>
-                  <a href="#" data-quantity="1" class="button product" data-product_id="403" rel="nofollow">Añadir al carrito</a>
-                </li>
-                <br>
-                <li class="listas productos">
-                  <a href="#" class="products">
-                    <img src="img/ladrillo yoga.jpg" class="post-image" alt="" style="width: 100%;">
-                    <h2 class="product_title">Ladrillo de yoga</h2>
-                    <span class="price">
-                      <span class="Price-Symbol">&#36;
-                      </span>400.00
-                    </span>
-                  </a>
-                  <a href="#" data-quantity="1" class="button product" data-product_id="403" rel="nofollow">Añadir al carrito</a>
-                </li>
-                <br>
-                <li class="listas productos">
-                  <a href="#" class="products">
-                    <img src="img/manta polar.jpg" class="post-image" alt="" style="width: 100%;">
-                    <h2 class="product_title">Manta  polar</h2>
-                    <span class="price">
-                      <span class="Price-Symbol">&#36;
-                      </span>350.00
-                    </span>
-                  </a>
-                  <a href="#" data-quantity="1" class="button product" data-product_id="403" rel="nofollow">Añadir al carrito</a>
-                </li>
-                <br>
-                <li class="listas productos">
-                  <a href="#" class="products">
-                    <img src="img/mat estampada.jpg" class="post-image" alt="" style="width: 100%;">
-                    <h2 class="product_title">Mat estampada</h2>
-                    <span class="price">
-                      <span class="Price-Symbol">&#36;
-                      </span>650.00
-                    </span>
-                  </a>
-                  <a href="#" data-quantity="1" class="button product" data-product_id="403" rel="nofollow">Añadir al carrito</a>
-                </li>
-                <br>
-                <li class="listas productos">
-                  <a href="#" class="products">
-                    <img src="img/mat lisa.jpg" class="post-image" alt="" style="width: 100%;">
-                    <h2 class="product_title">Mat lisa</h2>
-                    <span class="price">
-                      <span class="Price-Symbol">&#36;
-                      </span>550.00
-                    </span>
-                  </a>
-                  <a href="#" data-quantity="1" class="button product" data-product_id="403" rel="nofollow">Añadir al carrito</a>
-                </li>
-                <br>
-                <li class="listas productos">
-                  <a href="#" class="products">
-                    <img src="img/porta mat.jpg" class="post-image" alt="" style="width: 100%;">
-                    <h2 class="product_title">Porta mat</h2>
-                    <span class="price">
-                      <span class="Price-Symbol">&#36;
-                      </span>260.00
-                    </span>
-                  </a>
-                  <a href="#" data-quantity="1" class="button product" data-product_id="403" rel="nofollow">Añadir al carrito</a>
-                </li>
-                <br>
-                <li class="listas productos">
-                  <a href="#" class="products">
-                    <img src="img/silla meditacion.jpg" class="post-image" alt="" style="width: 100%;">
-                    <h2 class="product_title">Silla de meditación</h2>
-                    <span class="price">
-                      <span class="Price-Symbol">&#36;
-                      </span>780.00
-                    </span>
-                  </a>
-                  <a href="#" data-quantity="1" class="button product" data-product_id="403" rel="nofollow">Añadir al carrito</a>
-                </li>
-                <br>
-                <li class="listas productos">
-                  <a href="#" class="products">
-                    <img src="img/zafu.jpg" class="post-image" alt="" style="width: 100%;">
-                    <h2 class="product_title">Zafu</h2>
-                    <span class="price">
-                      <span class="symbol price">&#36;
-                      </span>380.00
-                    </span>
-                  </a>
-                  <a href="#" data-quantity="1" class="button product" data-product_id="403" rel="nofollow">Añadir al carrito</a>
-                </li>
-            </ul>
-          </div>
-          </main><!-- #main -->
-        </div>
-
-        <!-- <div id="product_categories" class="categories">
-          <span class="title">Categorías de los productos
-          </span>
-          <ul class="product-categories">
-            <li class="cat">
-              <a href="·">Accesorios</a>
-              <ul class='children'>
-                <li class="cat-item cat-item-13">
-                  <a href="·">Fitness</a>
-                </li>
-                <li class="cat-item cat-item-14">
-                  <a href="·">Pilates</a>
-                </li>
-                <li class="cat-item cat-item-12">
-                  <a href="·">Yoga</a>
-                </li>
-              </ul>
-            </li>
-            <li class="cat-item cat-item-10 cat-parent">
-              <a href="·">Indumentaria</a>
-              <ul class='children'>
-                <li class="cat-item cat-item-17">
-                  <a href="#">Fitness</a>
-                </li>
-                <li class="cat-item cat-item-16">
-                  <a href="#">Yoga</a>
-                </li>
-              </ul>
-            </li>
-            <li class="cat-item cat-item-8 current-cat">
-              <a href="#">Otros Productos</a>
-            </li>
-            <li class="cat-item cat-item-190">
-              <a href="#">Promociones</a>
-            </li>
-          </ul>
-          <br>
-        </div> -->
-        <!-- <div id="woocommerce_price_filter-5" class="widget woocommerce widget_price_filter">
-          <form method="get" action="http://yogayfitness.com.ar/compras/categoria-producto/otros-productos/">
-              <div class="price_slider_wrapper">
-                <div class="price_slider" style="display:none;">
-                </div>
-                <div class="price_slider_amount">
-                  <input type="text" id="min_price" name="min_price" value="250" data-min="250" placeholder="Precio mínimo" />
-                  <input type="text" id="max_price" name="max_price" value="1100" data-max="1100" placeholder="Precio máximo" />
-                  <button type="submit" class="button">Filtrar</button>
-                  <div class="price_label" style="display:none;">Precio:
-                    <span class="from"></span> &mdash;
-                    <span class="to"></span>
-                  </div>
-                  <div class="clear"></div>
-                </div>
-              </div>
+    	<div id="content" class="site-content" tabindex="-1">
+    	 <div class="col-full">
+    		<nav class="woocommerce-breadcrumb"><a href="#">Inicio</a>&nbsp;&#47;&nbsp;Otros Productos</nav>
+        <div class="woocommerce"></div>
+        <div id="primary" class="content-area">
+    			<main id="main" class="site-main" role="main">
+    			  <h1 class="woocommerce-products-header__title page-title">Catálogo</h1>
+          <div class="storefront-sorting">
+            <form class="woocommerce-ordering" method="get">
+              <select name="orderby" class="orderby">
+                <option value="menu_order"  selected='selected'>Orden predeterminado</option>
+                <option value="popularity" >Ordenar por popularidad</option>
+                <option value="rating" >Ordenar por calificación media</option>
+                <option value="date" >Ordenar por novedades</option>
+                <option value="price" >Ordenar por precio: bajo a alto</option>
+                <option value="price-desc" >Ordenar por precio: alto a bajo</option>
+              </select>
+              <input type="hidden" name="paged" value="1" />
+              <p class="woocommerce-result-count">
+                Mostrando todos los resultados
+              </p>
             </form>
-          </div> -->
-        </div><!-- #secondary -->
+          </div>
+					<div class="woocommerce-pagination">
+					  <ul class="pagination">
+					    <li><a href="#">1</a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li><a href="#">4</a></li>
+					    <li><a href="#">5</a></li>
+					  </ul>
+					</div>
+          <ul class="products columns-3">
+            <li class="post-403 product type-product status-publish has-post-thumbnail product_cat-otros-productos first outofstock taxable shipping-taxable purchasable product-type-simple">
+            	<a href="#" class="ll">
+								<img width="199" height="300" src="css/img/capsula.jpg" class="post-image" alt="" sizes="(max-width: 199px) 100vw, 199px" />
+								<h2 class="woocommerce-loop-product__title">CÁPSULA ESTIMULANTE</h2>
+            		<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>450.00</span></span>
+	            </a>
+							<a href="#" data-quantity="1" class="button product_type_simple ajax_add_to_cart" data-product_id="403" data-product_sku="" aria-label="Lee más sobre &ldquo;Aceites esenciales  30c/c&rdquo;" rel="nofollow">Añadir al carrito</a>
+						</li>
+            <li class="post-349 product type-product status-publish has-post-thumbnail product_cat-otros-productos outofstock taxable shipping-taxable purchasable product-type-simple">
+            	<a href="#" class="ll">
+								<img width="199" height="300" src="css/img/barra.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" sizes="(max-width: 199px) 100vw, 199px" />
+								<h2 class="woocommerce-loop-product__title">BARRA MULTIEJERCICIO</h2>
+            		<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>850.00</span></span>
+            	</a>
+							<a href="#" data-quantity="1" class="button product_type_simple ajax_add_to_cart" data-product_id="349" data-product_sku="" aria-label="Lee más sobre &ldquo;ACEITES ESENCIALES 10C/C&rdquo;" rel="nofollow">Añadir al carrito</a>
+						</li>
+            <li class="post-1140 product type-product status-publish has-post-thumbnail product_cat-accesorios product_cat-yoga product_cat-otros-productos last instock taxable shipping-taxable purchasable product-type-simple">
+            	<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="288" height="216" src="css/img/colchoneta c-cierre.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" />
+								<h2 class="woocommerce-loop-product__title">COLCHONETA CON CIERRE</h2>
+            		<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>1150.00</span></span>
+            	</a>
+							<a href="/compras/categoria-producto/otros-productos/?add-to-cart=1140" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1140" data-product_sku="" aria-label="Añade &ldquo;ALMOHADILLA SAL DEL HIMALAYA&rdquo; a tu carrito" rel="nofollow">Añadir al carrito</a>
+						</li>
+            <li class="post-234 product type-product status-publish has-post-thumbnail product_cat-otros-productos first instock taxable shipping-taxable purchasable product-type-simple">
+            	<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="275" height="247" src="css/img/bandera.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" />
+								<h2 class="woocommerce-loop-product__title">BANDERA DE ORACION</h2>
+            		<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>595.00</span></span>
+            	</a>
+							<a href="/compras/categoria-producto/otros-productos/?add-to-cart=234" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="234" data-product_sku="" aria-label="Añade &ldquo;BANDERA DE ORACION&rdquo; a tu carrito" rel="nofollow">Añadir al carrito</a>
+						</li>
+            <li class="post-236 product type-product status-publish has-post-thumbnail product_cat-accesorios product_cat-yoga product_cat-otros-productos instock taxable shipping-taxable purchasable product-type-simple">
+            	<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="150" height="300" src="css/img/banderines.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" sizes="(max-width: 150px) 100vw, 150px" />
+								<h2 class="woocommerce-loop-product__title">BANDERINES</h2>
+            		<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>390.00</span></span>
+            	</a>
+							<a href="/compras/categoria-producto/otros-productos/?add-to-cart=236" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="236" data-product_sku="" aria-label="Añade &ldquo;BANDERINES&rdquo; a tu carrito" rel="nofollow">Añadir al carrito</a>
+						</li>
+            <li class="post-1640 product type-product status-publish has-post-thumbnail product_cat-accesorios product_cat-yoga product_cat-otros-productos last instock taxable shipping-taxable purchasable product-type-simple">
+            	<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="300" src="css/img/colchoneta plegable.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">COLCHONETA PLEGABLE</h2>
+            		<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>650.00</span></span>
+            	</a><a href="/compras/categoria-producto/otros-productos/?add-to-cart=1640" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1640" data-product_sku="" aria-label="Añade &ldquo;MANTEL REDONDOS&rdquo; a tu carrito" rel="nofollow">Añadir al carrito</a>
+						</li>
+            <li class="post-1364 product type-product status-publish has-post-thumbnail product_cat-accesorios product_cat-yoga product_cat-fitness product_cat-otros-productos product_tag-tobillera-2kg first instock taxable shipping-taxable purchasable product-type-simple">
+            	<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="300" src="css/img/cuello termico.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">CUELLO TERMICO</h2>
+            		<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>370.00</span></span>
+            	</a>
+							<a href="/compras/categoria-producto/otros-productos/?add-to-cart=1364" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1364" data-product_sku="" aria-label="Añade &ldquo;PAR TOBILLERA 2 KG (neoprene)&rdquo; a tu carrito" rel="nofollow">Añadir al carrito</a>
+						</li>
+            <li class="post-370 product type-product status-publish has-post-thumbnail product_cat-indumentaria product_cat-fitness-indumentaria product_cat-tiempo-libre product_cat-otros-productos outofstock taxable shipping-taxable purchasable product-type-simple">
+            	<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="200" height="300" src="css/img/encastrable.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" sizes="(max-width: 200px) 100vw, 200px" />
+								<h2 class="woocommerce-loop-product__title">ENCASTRABLE GOMA EVA</h2>
+            		<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>335.00</span></span>
+            	</a><a href="#" data-quantity="1" class="button product_type_simple ajax_add_to_cart" data-product_id="370" data-product_sku="" aria-label="Lee más sobre &ldquo;REMERA HORTENSIA&rdquo;" rel="nofollow">Añadir al carrito</a></li>
+            <li class="post-1512 product type-product status-publish has-post-thumbnail product_cat-accesorios product_cat-yoga product_cat-otros-productos last instock taxable shipping-taxable purchasable product-type-simple">
+            	<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="300" src="css/img/aku ball.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">AKU BALL</h2>
+            		<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>450.00</span></span>
+            	</a><a href="/compras/categoria-producto/otros-productos/?add-to-cart=1512" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1512" data-product_sku="" aria-label="Añade &ldquo;TAPICES 1M X 0,70 CM&rdquo; a tu carrito" rel="nofollow">Añadir al carrito</a>
+						</li>
+            <li class="post-1627 product type-product status-publish has-post-thumbnail product_cat-accesorios product_cat-yoga product_cat-otros-productos first instock taxable shipping-taxable purchasable product-type-simple">
+            	<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="300" src="css/img/aceites1.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt=""  sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">ACEITES ESENCIALES</h2>
+            		<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>380.00</span></span>
+            	</a><a href="/compras/categoria-producto/otros-productos/?add-to-cart=1627" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1627" data-product_sku="" aria-label="Añade &ldquo;Tapices Grandes 1.5m x 1m&rdquo; a tu carrito" rel="nofollow">Añadir al carrito</a>
+						</li>
+            <li class="post-239 product type-product status-publish has-post-thumbnail product_cat-otros-productos product_tag-deidades product_tag-veladores outofstock taxable shipping-taxable purchasable product-type-simple">
+            	<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="199" src="css/img/velador yoga.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">VELADOR DE YOGA</h2>
+            		<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>450.00</span></span>
+            	</a><a href="#" data-quantity="1" class="button product_type_simple ajax_add_to_cart" data-product_id="239" data-product_sku="" aria-label="Lee más sobre &ldquo;VELADOR DE YOGA&rdquo;" rel="nofollow">Añadir al carrito</a>
+						</li>
+						<li class="post-1512 product type-product status-publish has-post-thumbnail product_cat-accesorios product_cat-yoga product_cat-otros-productos last instock taxable shipping-taxable purchasable product-type-simple">
+							<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="300" src="css/img/fisiobalon mani.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">FISIOBALON MANÍ</h2>
+								<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>600.00</span></span>
+							</a><a href="/compras/categoria-producto/otros-productos/?add-to-cart=1512" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1512" data-product_sku="" aria-label="Añade &ldquo;TAPICES 1M X 0,70 CM&rdquo; a tu carrito" rel="nofollow">Añadir al carrito</a>
+						</li>
+						<li class="post-1627 product type-product status-publish has-post-thumbnail product_cat-accesorios product_cat-yoga product_cat-otros-productos first instock taxable shipping-taxable purchasable product-type-simple">
+            	<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="300" src="css/img/guantes.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt=""  sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">GUANTES FITNESS</h2>
+            		<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>850.00</span></span>
+            	</a><a href="/compras/categoria-producto/otros-productos/?add-to-cart=1627" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1627" data-product_sku="" aria-label="Añade &ldquo;Tapices Grandes 1.5m x 1m&rdquo; a tu carrito" rel="nofollow">Añadir al carrito</a>
+						</li>
+						<li class="post-239 product type-product status-publish has-post-thumbnail product_cat-otros-productos product_tag-deidades product_tag-veladores outofstock taxable shipping-taxable purchasable product-type-simple">
+            	<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="199" src="css/img/cordones.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">CORDONES DE SILICONA</h2>
+            		<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>280.00</span></span>
+            	</a><a href="#" data-quantity="1" class="button product_type_simple ajax_add_to_cart" data-product_id="239" data-product_sku="" aria-label="Lee más sobre &ldquo;VELADOR DE YOGA&rdquo;" rel="nofollow">Añadir al carrito</a>
+						</li>
+						<li class="post-1512 product type-product status-publish has-post-thumbnail product_cat-accesorios product_cat-yoga product_cat-otros-productos last instock taxable shipping-taxable purchasable product-type-simple">
+							<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="300" src="css/img/tobillera.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">TOBILLERAS</h2>
+								<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>800.00</span></span>
+							</a><a href="/compras/categoria-producto/otros-productos/?add-to-cart=1512" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1512" data-product_sku="" aria-label="Añade &ldquo;TAPICES 1M X 0,70 CM&rdquo; a tu carrito" rel="nofollow">Añadir al carrito</a>
+						</li>
+						<li class="post-1627 product type-product status-publish has-post-thumbnail product_cat-accesorios product_cat-yoga product_cat-otros-productos first instock taxable shipping-taxable purchasable product-type-simple">
+							<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="300" src="css/img/cervical.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt=""  sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">ALMOHADA CERVICAL</h2>
+								<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>720.00</span></span>
+							</a><a href="/compras/categoria-producto/otros-productos/?add-to-cart=1627" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1627" data-product_sku="" aria-label="Añade &ldquo;Tapices Grandes 1.5m x 1m&rdquo; a tu carrito" rel="nofollow">Añadir al carrito</a>
+						</li>
+						<li class="post-239 product type-product status-publish has-post-thumbnail product_cat-otros-productos product_tag-deidades product_tag-veladores outofstock taxable shipping-taxable purchasable product-type-simple">
+							<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="199" src="css/img/lumbar.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">ALMOHADA LUMBAR</h2>
+								<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>620.00</span></span>
+							</a><a href="#" data-quantity="1" class="button product_type_simple ajax_add_to_cart" data-product_id="239" data-product_sku="" aria-label="Lee más sobre &ldquo;VELADOR DE YOGA&rdquo;" rel="nofollow">Añadir al carrito</a>
+						</li>
+						<li class="post-1512 product type-product status-publish has-post-thumbnail product_cat-accesorios product_cat-yoga product_cat-otros-productos last instock taxable shipping-taxable purchasable product-type-simple">
+							<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="300" src="css/img/termica.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">ALMOHADA TERMICA</h2>
+								<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>620.00</span></span>
+							</a><a href="/compras/categoria-producto/otros-productos/?add-to-cart=1512" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1512" data-product_sku="" aria-label="Añade &ldquo;TAPICES 1M X 0,70 CM&rdquo; a tu carrito" rel="nofollow">Añadir al carrito</a>
+						</li>
+						<li class="post-1627 product type-product status-publish has-post-thumbnail product_cat-accesorios product_cat-yoga product_cat-otros-productos first instock taxable shipping-taxable purchasable product-type-simple">
+							<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="300" src="css/img/tapices grandes.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt=""  sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">TAPICES</h2>
+								<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>1200.00</span></span>
+							</a><a href="/compras/categoria-producto/otros-productos/?add-to-cart=1627" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1627" data-product_sku="" aria-label="Añade &ldquo;Tapices Grandes 1.5m x 1m&rdquo; a tu carrito" rel="nofollow">Añadir al carrito</a>
+						</li>
+						<li class="post-239 product type-product status-publish has-post-thumbnail product_cat-otros-productos product_tag-deidades product_tag-veladores outofstock taxable shipping-taxable purchasable product-type-simple">
+							<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="199" src="css/img/silla meditacion.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">SILLA DE MEDITACION</h2>
+								<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>950.00</span></span>
+							</a><a href="#" data-quantity="1" class="button product_type_simple ajax_add_to_cart" data-product_id="239" data-product_sku="" aria-label="Lee más sobre &ldquo;VELADOR DE YOGA&rdquo;" rel="nofollow">Añadir al carrito</a>
+						</li>
+						<li class="post-1512 product type-product status-publish has-post-thumbnail product_cat-accesorios product_cat-yoga product_cat-otros-productos last instock taxable shipping-taxable purchasable product-type-simple">
+							<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="300" src="css/img/porta mat.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">BOLSO PORTA MAT</h2>
+								<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>800.00</span></span>
+							</a><a href="/compras/categoria-producto/otros-productos/?add-to-cart=1512" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1512" data-product_sku="" aria-label="Añade &ldquo;TAPICES 1M X 0,70 CM&rdquo; a tu carrito" rel="nofollow">Añadir al carrito</a>
+						</li>
+						<li class="post-1627 product type-product status-publish has-post-thumbnail product_cat-accesorios product_cat-yoga product_cat-otros-productos first instock taxable shipping-taxable purchasable product-type-simple">
+							<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="300" src="css/img/mat lisa.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt=""  sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">MAT LISA</h2>
+								<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>930.00</span></span>
+							</a><a href="/compras/categoria-producto/otros-productos/?add-to-cart=1627" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1627" data-product_sku="" aria-label="Añade &ldquo;Tapices Grandes 1.5m x 1m&rdquo; a tu carrito" rel="nofollow">Añadir al carrito</a>
+						</li>
+						<li class="post-239 product type-product status-publish has-post-thumbnail product_cat-otros-productos product_tag-deidades product_tag-veladores outofstock taxable shipping-taxable purchasable product-type-simple">
+							<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="199" src="css/img/mat estampada.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">MAT ESTAMPADA</h2>
+								<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>980.00</span></span>
+							</a><a href="#" data-quantity="1" class="button product_type_simple ajax_add_to_cart" data-product_id="239" data-product_sku="" aria-label="Lee más sobre &ldquo;VELADOR DE YOGA&rdquo;" rel="nofollow">Añadir al carrito</a>
+						</li>
+						<li class="post-1512 product type-product status-publish has-post-thumbnail product_cat-accesorios product_cat-yoga product_cat-otros-productos last instock taxable shipping-taxable purchasable product-type-simple">
+							<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="300" src="css/img/zafu.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">ZAFU</h2>
+								<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>870.00</span></span>
+							</a><a href="/compras/categoria-producto/otros-productos/?add-to-cart=1512" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1512" data-product_sku="" aria-label="Añade &ldquo;TAPICES 1M X 0,70 CM&rdquo; a tu carrito" rel="nofollow">Añadir al carrito</a>
+						</li>
+						<li class="post-1627 product type-product status-publish has-post-thumbnail product_cat-accesorios product_cat-yoga product_cat-otros-productos first instock taxable shipping-taxable purchasable product-type-simple">
+							<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="300" src="css/img/elongador.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt=""  sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">ELONGADOR CURVO</h2>
+								<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>2900.00</span></span>
+							</a><a href="/compras/categoria-producto/otros-productos/?add-to-cart=1627" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1627" data-product_sku="" aria-label="Añade &ldquo;Tapices Grandes 1.5m x 1m&rdquo; a tu carrito" rel="nofollow">Añadir al carrito</a>
+						</li>
+						<li class="post-239 product type-product status-publish has-post-thumbnail product_cat-otros-productos product_tag-deidades product_tag-veladores outofstock taxable shipping-taxable purchasable product-type-simple">
+							<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="199" src="css/img/cintos.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">CINTOS DE 4 METROS</h2>
+								<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>980.00</span></span>
+							</a><a href="#" data-quantity="1" class="button product_type_simple ajax_add_to_cart" data-product_id="239" data-product_sku="" aria-label="Lee más sobre &ldquo;VELADOR DE YOGA&rdquo;" rel="nofollow">Añadir al carrito</a>
+						</li>
+						<li class="post-1512 product type-product status-publish has-post-thumbnail product_cat-accesorios product_cat-yoga product_cat-otros-productos last instock taxable shipping-taxable purchasable product-type-simple">
+							<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="300" src="css/img/ladrillo yoga.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">LADRILLO DE YOGA</h2>
+								<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>870.00</span></span>
+							</a><a href="/compras/categoria-producto/otros-productos/?add-to-cart=1512" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1512" data-product_sku="" aria-label="Añade &ldquo;TAPICES 1M X 0,70 CM&rdquo; a tu carrito" rel="nofollow">Añadir al carrito</a>
+						</li>
+						<li class="post-1627 product type-product status-publish has-post-thumbnail product_cat-accesorios product_cat-yoga product_cat-otros-productos first instock taxable shipping-taxable purchasable product-type-simple">
+							<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="300" src="css/img/jala neti.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt=""  sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">JALA NETI</h2>
+								<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>220.00</span></span>
+							</a><a href="/compras/categoria-producto/otros-productos/?add-to-cart=1627" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1627" data-product_sku="" aria-label="Añade &ldquo;Tapices Grandes 1.5m x 1m&rdquo; a tu carrito" rel="nofollow">Añadir al carrito</a>
+						</li>
+						<li class="post-239 product type-product status-publish has-post-thumbnail product_cat-otros-productos product_tag-deidades product_tag-veladores outofstock taxable shipping-taxable purchasable product-type-simple">
+							<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+								<img width="300" height="199" src="css/img/hornillo de cerámica.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" sizes="(max-width: 300px) 100vw, 300px" />
+								<h2 class="woocommerce-loop-product__title">HORNILLO DE CERÁMICA</h2>
+								<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>199.00</span></span>
+							</a><a href="#" data-quantity="1" class="button product_type_simple ajax_add_to_cart" data-product_id="239" data-product_sku="" aria-label="Lee más sobre &ldquo;VELADOR DE YOGA&rdquo;" rel="nofollow">Añadir al carrito</a>
+						</li>
+				  </ul>
+	      </main><!-- #main -->
+    		</div><!-- #primary -->
 
-          </div><!-- .col-full -->
-        </div><!-- #content -->
-      </div>
+		    <div id="secondary" class="widget-area" role="complementary">
+					<div id="woocommerce_product_categories-3" class="widget woocommerce widget_product_categories">
+		        <span class="gamma widget-title">Categorías de los productos</span>
+		          <ul class="product-categories">
+		            <li class="cat-item cat-item-11 cat-parent"><a href="#Fitness">Fitness</a>
+		              <ul class='children'>
+		                <li class="cat-item cat-item-14"><a href="">Accesorios</a></li>
+		                <li class="cat-item cat-item-12"><a href="">Indumentarias</a></li>
+		              </ul>
+		            </li>
+		            <li class="cat-item cat-item-10 cat-parent"><a href="">Yoga</a>
+		              <ul class='children'>
+		                <li class="cat-item cat-item-17"><a href="">Decoración</a></li>
+		                <li class="cat-item cat-item-20"><a href="">Accesorios</a></li>
+		              </ul>
+		            </li>
+		            <li class="cat-item cat-item-8 current-cat"><a href="">Otros Productos</a></li>
+		            {{-- <li class="cat-item cat-item-190"><a href="">Promociones</a></li>
+		            <li class="cat-item cat-item-118"><a href="">Rehabilitacion</a></li> --}}
+		        </ul>
+					</div>
+		      <div id="woocommerce_price_filter-5" class="widget woocommerce widget_price_filter">
+		        <form method="get" action="">
+		    			<div class="price_slider_wrapper">
+		    				<div class="price_slider" style="display:none;"></div>
+		    				<div class="price_slider_amount">
+		    					<input type="text" id="min_price" name="min_price" value="250" data-min="250" placeholder="Precio mínimo" />
+		    					<input type="text" id="max_price" name="max_price" value="1100" data-max="1100" placeholder="Precio máximo" />
+		    					<button type="submit" class="button">Filtrar</button>
+		    					<div class="price_label" style="display:none;">
+		    						Precio: <span class="from"></span> &mdash; <span class="to"></span>
+		    					</div>
+		    					<div class="clear"></div>
+		    				</div>
+		    			</div>
+		    		</form>
+	      	</div>
+    		</div><!-- #secondary -->
+  			</div><!-- .col-full -->
+    	</div><!-- #content -->
+		</div>
 
-    <!-- <script src="js/bootstrap.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/vegas.min.js"></script>
-    <script src="responsiveslides.min.js"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+			<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="col-full">
+					<div class="site-info"> &copy; Shanti Insumos 2019
+					<br />
+					</div><!-- .site-info -->
+					<div class="storefront-handheld-footer-bar">
+						<ul class="columns-3">
+							<li class="my-account">
+								<a href="">Mi cuenta</a>
+							</li>
+							<li class="search">
+								<a href="">Buscar</a>
+								<div class="site-search">
+									<div class="widget woocommerce widget_product_search">
+										<form role="search" method="get" class="woocommerce-product-search" action="#">
+	    								<label class="screen-reader-text" for="woocommerce-product-search-field-1">Buscar por:</label>
+	    								<input type="search" id="woocommerce-product-search-field-1" class="search-field" placeholder="Buscar productos&hellip;" value="" name="s" />
+	    								<button type="submit" value="Buscar">Buscar</button>
+	    								<input type="hidden" name="post_type" value="product" />
+	    							</form>
+							    </div>
+								</div>
+							</li>
+							<li class="cart">
+								<a class="footer-cart-contents" href="" title="Ver carrito de la compra">
+	    						<span class="count">0</span>
+	    					</a>
+							</li>
+						</ul>
+	  			</div>
+	  		</div><!-- .col-full -->
+			</footer><!-- #colophon -->
+	      <!-- NAV BAR -->
+	    <nav id="cd-lateral-nav">
+	      <ul class="cd-navigation">
+	        <li class="item-has-children">
+	          <a href="#0">Productos</a>
+	            <ul class="sub-menu">
+	              <li><a href="#0">Fitness</a></li>
+	              <li><a href="#0">Yoga</a></li>
+								<li><a href="#0">Otros Productos</a></li>
+	            </ul>
+	          </li>
+	        </ul>
+
+	        <ul class="cd-navigation cd-single-item-wrapper">
+	          <li><a href="#">Home</a></li>
+	          <li><a href="#">Preguntas frecuentes</a></li>
+	          <li><a href="#">Catálogo</a></li>
+	          <li><a href="#">Registro</a></li>
+	          <li><a href="#">Login</a></li>
+	          <li><a href="#">Contacto</a></li>
+	        </ul>
+
+	        <div class="cd-navigation socials">
+	          <a class="cd-twitter cd-img-replace" href="#0">Twitter</a>
+	          <a class="cd-facebook cd-img-replace" href="#0">Facebook</a>
+	        </div>
+	      </nav>
+
+  	<script type='text/javascript'>
+	    /* <![CDATA[ */
+	    var wc_add_to_cart_params = {"ajax_url":"\/compras\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/compras\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Ver carrito","cart_url":"http:\/\/yogayfitness.com.ar\/compras\/carrito\/","is_cart":"","cart_redirect_after_add":"no"};
+	    /* ]]> */
+  	</script>
+  	<script type='text/javascript'>
+	    /* <![CDATA[ */
+	    var woocommerce_price_slider_params = {"currency_format_num_decimals":"0","currency_format_symbol":"$","currency_format_decimal_sep":".","currency_format_thousand_sep":",","currency_format":"%s%v"};
+	    /* ]]> */
+    </script>
+
   </body>
+	<script type='text/javascript' src='http://yogayfitness.com.ar/compras/wp-content/plugins/woocommerce/assets/js/frontend/price-slider.min.js?ver=3.4.5'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
 </html>
