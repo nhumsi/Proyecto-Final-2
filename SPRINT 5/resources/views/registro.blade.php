@@ -38,16 +38,16 @@
 						<form class="access-form-registro" action="/registro/guardar" method="post">
 							@csrf
 							<h3 class="reg">Formulario de Registro</h3>
-							{{--
+							
 							<br>
 							<ul style="color:red" class="errores">
-								/*@foreach ($errores->all() as $error)
+								@foreach ($errors->all() as $error)
 									<li>
 										{{$error}}
 									</li>
 									
 								@endforeach
-							</ul> --}}
+							</ul> 
 							<div class="input-group mb-3">
 									<div class="input-group-prepend">
 										  <span class="input-group-text" id="basic-addon1">Nombre de usuario:</span>
@@ -66,7 +66,7 @@
 								<div class="input-group-prepend">
 									  <span class="input-group-text" id="basic-addon1">Confirme contraseña:</span>
 						    	</div>
-								    <input type="password" class="form-control" placeholder="" name="pass-conf" id="pass-conf">
+								    <input type="password" class="form-control" placeholder="" name="password_confirmation" id="password_confirmation">
 								</div>
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
@@ -121,25 +121,29 @@
 												<option value="Tierra del Fuego">Tierra del Fuego</option>
 											    <option value="Tucuman" selected>Tucuman</option>
 										</select>
-									<div class="input-group-prepend">
-										  <span class="input-group-text" id="basic-addon1">Codigo Postal:</span>
+										<div class="input-group-prepend">
+											<span class="input-group-text" id="basic-addon1">Localidad:</span>
+										</div>
+										<input type="text" class="form-control" placeholder="" name="localidad" id="localidad" value="{{old("localidad")}}">	
 									</div>
-										<input type="text" class="form-control" placeholder="" name="cp" id="cp" value="{{old("cp")}}">	
-							</div>
-							<div class="input-group mb-3">
-									<div class="input-group-prepend">
-										  <span class="input-group-text" id="basic-addon1">Direccion:</span>
-									</div>
+									<div class="input-group mb-3">
+										<div class="input-group-prepend">
+											<span class="input-group-text" id="basic-addon1">Direccion:</span>
+										</div>
 										<input type="text" class="form-control" placeholder="" name="direccion" id="direccion" value="{{old("direccion")}}">
+										<span class="input-group-text" id="basic-addon1">Codigo Postal:</span>
+										<div class="input-group-prepend">
+										</div>
+										<input type="text" class="form-control" placeholder="" name="cp" id="cp" value="{{old("cp")}}">	
+									</div>
+									<div class="botones">
+										<button type="submit" class="btn btn-lg btn-primary">Enviar</button>
+										<button type="reset" class="btn btn-secondary btn-lg">Borrar</button>
+									</div>
+								</form>
 							</div>
-							<div class="botones">
-								<button type="submit" class="btn btn-lg btn-primary">Enviar</button>
-								<button type="reset" class="btn btn-secondary btn-lg">Borrar</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</section>
+						</div>
+					</section>
     	</main>
  <!-- NAV BAR -->
    <nav id="cd-lateral-nav">
