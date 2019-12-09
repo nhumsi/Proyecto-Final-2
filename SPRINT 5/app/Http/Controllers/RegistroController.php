@@ -21,6 +21,8 @@ class RegistroController extends Controller
             "nombre" => "required|string|min:2",
             "apellido" => "required|string|min:2",
             "cp" =>"required|string|size:4",
+            "localidad" => "required|string|min:2",
+            "direccion" => "required|string|min:2"
         ];
 
         $msj = [
@@ -30,7 +32,7 @@ class RegistroController extends Controller
             "size"=> "El codigo postal debe tener :size numeros",
             "unique" => "El campo :attribute ya se encuentra en uso",
             "confirmed" => "Las contraseñas deben coincidir",
-            "required_with" => "El campo :attribute no puede estar vacio",
+            "required" => "El campo :attribute no puede estar vacio",
             "same" => "Las contraseñas deben coincidir"
         ];
 
