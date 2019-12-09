@@ -31,7 +31,6 @@ Route::get('/catalogo', function(){
     return view('catalogo');
 } );
 
-<<<<<<< HEAD
 Route::get('/registro',function(){
     return view('registro');
 });
@@ -40,7 +39,6 @@ Route::post('/registro/guardar', 'RegistroController@guardar');
 
 
 
-=======
 Route::get('/carrito', function(){
     return view('carrito');
 } );
@@ -54,4 +52,3 @@ Route::get('/registro',function(){
     return view('registro');
 });
 Route::post('/registro/guardar', 'RegistroController@guardar');
->>>>>>> SPRINT5

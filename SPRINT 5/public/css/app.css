@@ -935,21 +935,16 @@ form.access-form-login{
 
 /*REGISTRO*/
 
-<<<<<<< HEAD
 .form-container-registro {
   margin-top: 80px;
-=======
 /* div.col.col-lg-6 {
   margin-top: 20px;
->>>>>>> SPRINT5
 }
 
 form.access-form-registro {
   border: solid #B17A4A 4px;
   border-radius: 5px;
   padding: 10px;
-<<<<<<< HEAD
-=======
 } */
 
 .form-container-registro {
@@ -960,7 +955,6 @@ form.access-form-registro {
   border: solid #B17A4A 4px;
   border-radius: 5px;
   padding: 10px;
->>>>>>> SPRINT5
 }
 
 h3.reg {
