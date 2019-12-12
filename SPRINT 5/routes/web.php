@@ -52,3 +52,11 @@ Route::get('/registro',function(){
     return view('registro');
 });
 Route::post('/registro/guardar', 'RegistroController@guardar');
+
+
+
+//Route::post('/login/loguearse', 'LoginController@loguearse');
+
+Route::get('/prueba', 'PruebaController@listadoFitness');
+
+Route::get('/perfil', 'PerfilController@mostrar');

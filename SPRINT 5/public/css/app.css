@@ -914,7 +914,7 @@ iframe {
 
 
 /*LOGIN*/
-div.col.col-lg-5 h2 {
+/*div.col.col-lg-5 h2 {
   font-family: "Titillium Web", sans-serif;
   color: white;
 }
@@ -931,6 +931,30 @@ form.access-form-login{
   border-radius: 5px;
   padding: 10px;
   border: solid 8px grey;
+}*/
+
+h2.reg {
+  margin-top: 15px;
+}
+
+#login-input {
+  width: 80%;
+  margin: auto;
+}
+div.botones-login{
+  height: 10%;     
+}
+
+button.btn.btn-primary.btn-sm {
+  height: 100%;
+}
+button.btn.btn-secondary.btn-sm {
+  height: 100%;
+}
+
+h5.reg {
+  color: white;
+  margin-top:15px;
 }
 
 /*REGISTRO*/

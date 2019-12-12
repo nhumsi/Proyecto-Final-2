@@ -26,19 +26,22 @@
 
     <div class="container"> <!-- Contenedor ppal -->
       <header class="main-header">
-      	<a id="cd-logo" href="index"><img src="css/img/logo.png" alt="Homepage"></a>
-        <nav id="cd-top-nav">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Preguntas frecuentes</a></li>
-            <li><a href="#">Catálogo</a></li>
-            <li><a href="#">Registro</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
-        <a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
-      </header>
+        <a id="cd-logo" href="index.html"><img src="css/img/logo.png" alt="Homepage"></a>
+          <nav id="cd-top-nav">
+            <ul>
+            <li><a href="/index">Home</a></li>
+            <li>
+              @auth
+            <a href="/perfil">Perfil</a>                  
+              @endauth
+              @guest
+              <a href="/login">Iniciar sesion</a>      
+              @endguest
+            </li>
+            </ul> 	 	 
+          </nav>
+        <a id="cd-menu-trigger" href=""><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
+        </header>
 
       <main class="cd-main-content">
 
@@ -198,5 +201,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/main.js"></script> <!-- Resource jQuery -->
+    <script src="js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/vegas.min.js"></script>
+<script src="responsiveslides.min.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   </body>
 </html>

@@ -21,73 +21,63 @@
 
 </head>
 <body>
-        <header class="main-header">
-          <a id="cd-logo" href="index.html"><img src="img/logo.png" alt="Homepage"></a>
-            <nav id="cd-top-nav">
-                <ul>
-                  <li><a href="#0">Home</a></li>
-                  <li><a href="#0">Login</a></li>
-                </ul> 	 	 
-            </nav>
-          <a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
-        </header>
+  <header class="main-header">
+    <a id="cd-logo" href="index.html"><img src="img/logo.png" alt="Homepage"></a>
+      <nav id="cd-top-nav">
+          <ul>
+            <li><a href="/index">Home</a></li>
+            <li><a href="/login">Login</a></li>
+          </ul> 	 	 
+      </nav>
+    <a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
+  </header>
     <div class="container">
-        <header class="main-header">
-                <a id="cd-logo" href="index.html"><img src="img/logo.png" alt="Homepage"></a>
-                <nav id="cd-top-nav">
-                <ul>
-                    <li><a href="#0">Home</a></li>
-                    <li><a href="#0">Login</a></li>
-                </ul> 	 	 
-                </nav>
-          <a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
-        </header>
+      <header class="main-header">
+        <a id="cd-logo" href="index.html"><img src="img/logo.png" alt="Homepage"></a>
+           <nav id="cd-top-nav">
+               <ul>
+                 <li><a href="/index">Home</a></li>
+                 <li><a href="/login">Login</a></li>
+               </ul> 	 	 
+           </nav>
+        <a id="cd-menu-trigger"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
+       </header>
         <main class="cd-main-content">
-                <section class="form-container-login">
-                    <div class="row justify-content-md-center">
-                        <div class="col col-lg-5">
-                        <form class="access-form-login" action="" method="get">
-                                <h2>Login</h2>
-                                <h5 class="reg-info">Ingrese con su nombre de usuario y contraseña</h5>
-                            <div class="field-group">
-                                <label for="email">E-mail</label>
-                                <br>
-                                <span class="input-item">
-                                    <i class="fa fa-user-circle"></i>
-                                </span>
-                                <input type="email" id="email" name="email" placeholder="e-mail" value="" required style="font-family: segoe script;">
-                            </div>
-                            <div class="field-group">
-                                <label for="password">Contraseña</label>
-                                <br>
-                              <span class="input-item">
-                                  <i class="fa fa-key"></i>
-                                 </span>
-                                <input type="password" id="passsword" name="password" placeholder="password" value="" required style="font-family: segoe script;">
-                            </div>
-                            <div class="field-group remember-me">
-                                <input type="checkbox" id="remember-me" name="remember-me" value="">
-                                <label for="remember-me">Recordarme</label>
-                            </div>
-                            <br>
-                            <button type="submit" name="send">Ingresar</button>
-                            <br>
-                            <br>
-                            <div class="other">
-                                 <button class="btn btn-outline-dark">¿Olvidaste tu contraseña?</button>
-                                 <button class="btn btn-info">Registrese!
-                                 <i class="fa fa-user-plus" aria-hidden="true"></i>
-                                 </button>
-                            </div>
-                            <br>
-                            <br>
-                            </div>
-                        </div>
-                        </form>
-                    </section>
-    
+          <section class="form-container-registro">
+            <div class="row justify-content-md-center">
+              <div class="col col-lg-6">
+                <form class="access-form-registro" action="/login/loguearse" method="post">
+                  @csrf
+                  <h5 class="reg">Ingrese su nombre de usuario y contraseña</h5>
+                  
+                  <br>
+                  <ul style="color:red" class="errores">
+                    @foreach ($errors->all() as $error)
+                      <li>
+                        {{$error}}
+                      </li>
+                      
+                    @endforeach
+                  </ul> 
+                  <div class="input-group mb-3" id="login-input">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">Nombre de usuario:</span>
+                      </div>
+                        <input type="text" class="form-control" placeholder="" name="nombre_usuario" id="nombre_usuario" value="{{old("nombre_usuario")}}">
+                  </div>
+                  <div class="input-group mb-3" id="login-input">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Contraseña:</span>
+                    </div>
+                  <input type="password" class="form-control" placeholder="" name="pass" id="pass">
+                  </div>  
+                  <br>
 
-
+                  <div class="botones-login">
+										<button type="submit" class="btn btn-primary btn-sm"">Acceder</button>
+										<button type="reset" class="btn btn-secondary btn-sm"">¿Olvido su contraseña?</button>
+                  </div>
+                </form>
         </main>
 
 <!-- NAV BAR -->
@@ -106,10 +96,10 @@
         </ul>
 
         <ul class="cd-navigation cd-single-item-wrapper">
-          <li><a href="#0">Login</a></li>
-          <li><a href="#0">Registrarse</a></li>
-          <li><a href="#0">Preguntas Frecuentes</a></li>
-          <li><a href="#0">Contacto</a></li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/registro">Registrarse</a></li>
+          <li><a href="/QA">Preguntas Frecuentes</a></li>
+          <li><a href="/contacto">Contacto</a></li>
         </ul>
 
 

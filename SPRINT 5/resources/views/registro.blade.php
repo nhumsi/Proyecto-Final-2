@@ -22,15 +22,15 @@
 
 <body>
     <header class="main-header">
-     <a id="cd-logo" href="index.html"><img src="img/logo.png" alt="Homepage"></a>
-        <nav id="cd-top-nav">
-            <ul>
-              <li><a href="#0">Home</a></li>
-              <li><a href="#0">Login</a></li>
-            </ul> 	 	 
-        </nav>
-     <a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
-    </header>
+		<a id="cd-logo" href="index.html"><img src="img/logo.png" alt="Homepage"></a>
+		  <nav id="cd-top-nav">
+			  <ul>
+				<li><a href="/index">Home</a></li>
+				<li><a href="/login">Login</a></li>
+			  </ul> 	 	 
+		  </nav>
+		<a id="cd-menu-trigger" href=""><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
+	  </header>
 	    <main class="cd-main-content-contacto">
 			<section class="form-container-registro">
 				<div class="row justify-content-md-center">
@@ -52,14 +52,14 @@
 									<div class="input-group-prepend">
 										  <span class="input-group-text" id="basic-addon1">Nombre de usuario:</span>
 									</div>
-										<input type="text" class="form-control" placeholder="Nombre" name="nombre_usuario" id="nombre_usuario" value="{{old("nombre_usuario")}}">
+										<input type="text" class="form-control" placeholder="Nombre" name="name" id="name" value="{{old("name")}}">
 										<span class="input-group-text" id="basic-addon1">Debe tener 5 caracteres mínimo</span>
 									</div>
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
 									  <span class="input-group-text" id="basic-addon1">Contraseña:</span>
 						    	</div>
-								    <input type="password" class="form-control" placeholder="" name="pass" id="pass">
+								    <input type="password" class="form-control" placeholder="" name="password" id="password">
 									<span class="input-group-text" id="basic-addon1">Debe tener 6 caracteres mínimo</span>
 								</div>
 							<div class="input-group mb-3">
@@ -161,10 +161,10 @@
         </ul>
 
         <ul class="cd-navigation cd-single-item-wrapper">
-          <li><a href="#0">Login</a></li>
-          <li><a href="#0">Registrarse</a></li>
-          <li><a href="#0">Preguntas Frecuentes</a></li>
-          <li><a href="#0">Contacto</a></li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/registro">Registrarse</a></li>
+          <li><a href="/QA">Preguntas Frecuentes</a></li>
+          <li><a href="/contacto">Contacto</a></li>
         </ul>
 
 

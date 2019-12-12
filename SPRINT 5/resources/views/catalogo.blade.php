@@ -26,21 +26,23 @@
 
   <body>
 		<div class="container">
-
       <header class="main-header">
-        <a id="cd-logo" href="catalogo"><img src="css/img/logo.png" alt="Compras"></a>
-        <nav id="cd-top-nav">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Preguntas frecuentes</a></li>
-            <li><a href="#">Catálogo</a></li>
-            <li><a href="#">Registro</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
-        <a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
-      </header>
+        <a id="cd-logo" href="index.html"><img src="css/img/logo.png" alt="Homepage"></a>
+          <nav id="cd-top-nav">
+            <ul>
+            <li><a href="/index">Home</a></li>
+            <li>
+              @auth
+            <a href="/perfil">Perfil</a>                  
+              @endauth
+              @guest
+              <a href="/login">Iniciar sesion</a>      
+              @endguest
+            </li>
+            </ul> 	 	 
+          </nav>
+        <a id="cd-menu-trigger" href=""><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
+        </header>
 
     	<div id="content" class="site-content" tabindex="-1">
     	 <div class="col-full">
