@@ -27,9 +27,11 @@ Route::get('/contacto', function(){
     return view('contacto');
 } );
 
-Route::get('/catalogo', function(){
-    return view('catalogo');
-} );
+Route::get('/fitness', 'FitnessController@listado');
+
+Route::get('/yoga', 'YogaController@listado');
+
+Route::get('/otrosProductos', 'OtrosProductosController@listado' );
 
 Route::get('/registro',function(){
     return view('registro');
