@@ -62,3 +62,7 @@ Route::post('/registro/guardar', 'RegistroController@guardar');
 Route::get('/prueba', 'PruebaController@listadoFitness');
 
 Route::get('/perfil', 'PerfilController@mostrar');
+
+Route::get('/perfil/editar', 'PerfilController@editar');
+
+Route::post('/perfil/guardar', 'PerfilController@guardar');

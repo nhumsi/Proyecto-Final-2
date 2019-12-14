@@ -31,7 +31,7 @@
           <nav id="cd-top-nav">
             <ul>
             <li><a href="/index">Home</a></li>
-            <li>
+            <li>	
               @auth
             <a href="/perfil">Perfil</a>
               @endauth

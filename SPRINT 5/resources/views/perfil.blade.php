@@ -38,13 +38,60 @@
     <a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
   </header>
     <main class="cd-main-content">
-            <div id="menu-perfil" class="row">
-                <div id="nav-perfil" class="col-lg-3">
+            <div id="menu-perfil" class="row justify-content-md-center">
+                <div id="nav-perfil" class="col col-lg-6">
+        
+                      <h3 class="reg">Perfil del Usuario (<a href="/perfil/editar">Editar</a>)</h3>
                       
+                      <br>
+                      <ul>
+                        <li>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Nombre:</span>
+                                <input type="text" style="background-color:white" class="form-control" value="{{$usuario->nombre}}" readonly="readonly">
+                            </div>
+                        </li>
 
+                        <li>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Apellido:</span>
+                                <input type="text" style="background-color:white" class="form-control" value="{{$usuario->apellido}}" readonly="readonly">
+                            </div>
+                        </li>
 
+                        <li>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">E-mail:</span>
+                                <input type="text" style="background-color:white" class="form-control" value="{{$usuario->email}}" readonly="readonly">
+                            </div>
+                        </li>
 
+                        <li>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Fecha de nacimiento:</span>
+                                <input type="text" style="background-color:white" class="form-control"  value="{{$usuario->fecha_nac}}" readonly="readonly">
+                            </div>
+                        </li>
 
+                        <li>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Provincia:</span>
+                                <input type="text" style="background-color:white" class="form-control"  value="{{$usuario->provincia}}" readonly="readonly">
+                                <span class="input-group-text" id="basic-addon1">Localidad:</span>
+                                <input type="text" style="background-color:white" class="form-control"  value="{{$usuario->localidad}}" readonly="readonly">                          
+                              </div>
+                        </li>
+
+                        <li>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Direccion:</span>
+                                <input type="text" style="background-color:white" class="form-control"  value="{{$usuario->direccion}}" readonly="readonly">
+                                <span class="input-group-text" id="basic-addon1">Codigo Postal  :</span>
+                                <input type="text" style="background-color:white" class="form-control"  value="{{$usuario->cp}}" readonly="readonly">
+                              </div>
+                        </li>
+                      </ul>
+                      
                 </div>
             </div>
     </main>
