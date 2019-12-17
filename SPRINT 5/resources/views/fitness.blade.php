@@ -49,7 +49,10 @@
         <div id="primary" class="content-area">
     			<main id="main" class="site-main" role="main">
     			  <h1 class="woocommerce-products-header__title page-title">Catálogo | Fitness</h1>
-          <div class="storefront-sorting">
+						<br>
+						<br>
+						
+          {{-- <div class="storefront-sorting">
             <form class="woocommerce-ordering" method="get">
               <select name="orderby" class="orderby">
                 <option value="menu_order"  selected='selected'>Orden predeterminado</option>
@@ -61,10 +64,11 @@
                 Mostrando todos los resultados
               </p>
             </form>
-          </div>
+          </div> --}}
           <ul class="products columns-3">
             <li class="post-403 product type-product status-publish has-post-thumbnail product_cat-otros-productos first outofstock taxable shipping-taxable purchasable product-type-simple">
             	<a href="#" class="ll">
+								{{-- <img src="/storage/{{fitness->image}}" alt=""> --}}
 								<img width="199" height="300" src="css/img/capsula.jpg" class="post-image" alt="" sizes="(max-width: 199px) 100vw, 199px" />
 								<h2 class="woocommerce-loop-product__title">CÁPSULA ESTIMULANTE</h2>
             		<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>450.00</span></span>

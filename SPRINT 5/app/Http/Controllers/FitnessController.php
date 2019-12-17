@@ -5,14 +5,66 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Fitness;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class FitnessController extends Controller
 {
+    public function listadoFitness()
+    {
+        $productos = Fitness::all();
+        // dd($pelis);
+
+        return view('prueba', compact('productos'));
+    }
+
     public function listado()
     {
       $fitness = Fitness::paginate(6);
 
       $vac = compact ('fitness');
       return view('fitness', $vac);
+    }
+
+    public function guardar(Request $req)
+    {
+        $cond = [
+            "nombre" => "string|required|min:4",
+            "color" => "required|string|min:2",
+            "precio" => "numeric|min:1",
+            "stock" => "numeric|min:1",
+            "image" => "file"
+        ];
+
+        $msj = [
+            "string" => "El campo :attribute no debe estar vacío",
+            "min" => "El campo :attribute debe tener un  mínimo de :min",
+            "numeric"=> "El campo :attribute debe ser un numero",
+            // "size"=> "El stock debe tener :size numeros",
+            // "unique" => "El campo :attribute ya se encuentra en uso",
+            // "confirmed" => "Las contraseñas deben coincidir",
+            "required" => "El campo :attribute no puede estar vacio",
+        ];
+
+
+        $this->validate($req, $cond, $msj);
+
+        $productoNuevo = new Fitness();
+
+        $ruta = $req -> file ("image") -> store("public");
+        $nombreArchivo = basename($ruta);
+
+        $productoNuevo-> nombre = $req["nombre"];
+        $productoNuevo-> color = $req["color"];
+        $productoNuevo-> precio = $req["precio"];
+        $productoNuevo-> stock = $req["stock"];
+        $productoNuevo-> image = $nombreArchivo;
+
+        $productoNuevo->save();
+
+
+
+        return redirect('/fitness');
     }
 }

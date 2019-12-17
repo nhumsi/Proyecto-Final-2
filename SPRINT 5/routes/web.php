@@ -45,6 +45,11 @@ Route::get('/carrito', function(){
     return view('carrito');
 } );
 
+Route::get('/ABM',function(){
+    return view('ABM');
+});
+Route::post('/ABM/guardar', 'FitnessController@guardar');
+
 Route::get('/QA', function(){
     return view('QA');
 } );
