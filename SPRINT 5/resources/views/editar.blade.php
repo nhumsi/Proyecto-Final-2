@@ -130,10 +130,14 @@
 										</div>
 										<input type="text" class="form-control" placeholder="" name="cp" id="cp" value="{{$usuario->cp}}">	
 									</div>
+<<<<<<< HEAD
 									<div class="product-image">
 										<label for="">Imagen:</label>
 										<input type="file" name="image" value="">
 									  </div>
+=======
+									
+>>>>>>> SPRINT5
 									<!--CORTAR Y SUBIR IMAGEN-->
 									<!--<div class="row">
 										<div class="col-md-4 text-center">						
