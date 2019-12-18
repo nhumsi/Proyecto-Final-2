@@ -6,6 +6,10 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\User;
 use App\Productos;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
+
 
 class PerfilController extends Controller
 {
@@ -27,6 +31,9 @@ class PerfilController extends Controller
     {
         $usuario = Auth::user();
 
+        $ruta = $req -> file ("image") -> store("public");
+        $nombreArchivo = basename($ruta);
+
         $usuario-> nombre = $req["nombre"];
         $usuario-> apellido = $req["apellido"];
         $usuario-> email = $req["email"];
@@ -35,6 +42,7 @@ class PerfilController extends Controller
         $usuario-> provincia = $req["provincia"];
         $usuario-> cp = $req["cp"];
         $usuario-> direccion = $req["direccion"];
+        $usuario-> image = $nombreArchivo;
 
         $usuario->save();
 
