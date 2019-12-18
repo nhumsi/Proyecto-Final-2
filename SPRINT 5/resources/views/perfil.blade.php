@@ -6,14 +6,12 @@
     <title>Shanti | Perfil</title>
 		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-		<link rel="stylesheet" href="css/styles.css"> <!-- Resource style -->
 		<script src="js/modernizr.js"></script> <!-- Modernizr -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="css/app.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/vegas.min.css">
 </head>
 <body>
@@ -39,10 +37,14 @@
   </header>
     <main class="cd-main-content">
             <div id="menu-perfil" class="row justify-content-md-center">
-                <div id="nav-perfil" class="col col-lg-6">
+                <div id="nav-perfil" class="col col-lg-5">
         
-                      <h3 class="reg">Perfil del Usuario (<a href="/perfil/editar">Editar</a>)</h3>
+                      <h3 class="reg" style="color: white">Perfil del Usuario (<a href="/perfil/editar">Editar</a>)</h3>
                       
+                      <br>
+                      <div class="row justify-content-md-center">
+                      <img src="/storage/{{$usuario->image}}" alt="img-perfil" height="200" style="border-radius:100px" class="img-perfil">
+                      </div>
                       <br>
                       <ul>
                         <li>
@@ -130,7 +132,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="js/vegas.min.js"></script>
-<script src="responsiveslides.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 </html>

@@ -1,33 +1,7 @@
-/*For mobile phones*/
-* {
-  margin: 0 auto;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-body {
-<<<<<<< HEAD
-  height: 100%;
-=======
-  /* overflow: hidden; */
->>>>>>> SPRINT5
-  background-size: 20%;
-  background-image: url(img/background10.jpg);
-
-}
-
-img.logo{
-  display: block;
-  width: 70%;
-}
-
-main{
-  padding-left: 15px;
-  padding-right: 15px;
-}
-/*NAVEGADOR*/
 /* --------------------------------
+
 Primary style
+
 -------------------------------- */
 html * {
   -webkit-font-smoothing: antialiased;
@@ -57,7 +31,9 @@ a {
 }
 
 /* --------------------------------
+
 Modules - reusable parts of our design
+
 -------------------------------- */
 .cd-img-replace {
   display: inline-block;
@@ -71,13 +47,17 @@ Modules - reusable parts of our design
 }
 
 /* --------------------------------
+
 Main components
+
 -------------------------------- */
 .cd-main-content {
   /* set a min-height and a z-index to be sure that the main element completely covers the lateral menu */
-  overflow: hidden;
+  background-size: cover;
+  background-image: url(../img/background.jpg);
   min-height: 100%;
   position: relative;
+  background-color: #f5f4e9;
   z-index: 2;
   padding-top: 50px;
   /* Force Hardware Acceleration in WebKit */
@@ -90,6 +70,22 @@ Main components
   -moz-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
+h2 {
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 40px;
+}
+h5 {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
 
 .cd-main-content.lateral-menu-is-open {
   /* translate to show the lateral menu - all content needs to be put in the .cd-main-content to translate*/
@@ -113,7 +109,7 @@ header {
   left: 0;
   height: 50px;
   width: 100%;
-  background-image: linear-gradient(90deg, #46DC9E, #558BD3);
+  background-image: linear-gradient(90deg, #FE5A5A, #FE935A);
   z-index: 3;
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
@@ -134,7 +130,7 @@ header.lateral-menu-is-open {
   transform: translateX(-260px);
 }
 header.is-fixed {
-  
+  position: fixed;
 }
 @media only screen and (min-width: 768px) {
   header {
@@ -143,10 +139,12 @@ header.is-fixed {
 }
 
 #cd-logo {
+  display: block;
   float: left;
 }
 #cd-logo img {
   width: 20%;
+  display: block;
 }
 @media only screen and (min-width: 768px) {
   body {
@@ -163,7 +161,7 @@ header.is-fixed {
 }
 #cd-top-nav ul {
   height: 100%;
-  padding-top: 16px;
+  padding-top: 18px;
 }
 #cd-top-nav li {
   display: inline-block;
@@ -194,7 +192,7 @@ header.is-fixed {
   top: 0;
   height: 100%;
   width: 50px;
-  background-color: (rgba(85, 139, 211,.3) 50%);
+  background-color: #FE935A;
 }
 #cd-menu-trigger .cd-menu-text {
   height: 100%;
@@ -221,7 +219,6 @@ header.is-fixed {
   background-color: white;
   /* these are the upper and lower lines in the menu menu */
 }
-
 #cd-menu-trigger .cd-menu-icon::before, #cd-menu-trigger .cd-menu-icon:after {
   content: '';
   width: 100%;
@@ -230,23 +227,18 @@ header.is-fixed {
   background-color: inherit;
   left: 0;
 }
-
 #cd-menu-trigger .cd-menu-icon::before {
   bottom: 5px;
 }
-
 #cd-menu-trigger .cd-menu-icon::after {
   top: 5px;
 }
-
 #cd-menu-trigger.is-clicked .cd-menu-icon {
   background-color: rgba(255, 255, 255, 0);
 }
-
 #cd-menu-trigger.is-clicked .cd-menu-icon::before, #cd-menu-trigger.is-clicked .cd-menu-icon::after {
   background-color: white;
 }
-
 #cd-menu-trigger.is-clicked .cd-menu-icon::before {
   bottom: 0;
   -webkit-transform: rotate(45deg);
@@ -255,7 +247,6 @@ header.is-fixed {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
 #cd-menu-trigger.is-clicked .cd-menu-icon::after {
   top: 0;
   -webkit-transform: rotate(-45deg);
@@ -293,7 +284,7 @@ header.is-fixed {
   /* the secondary navigation is covered by the main element */
   z-index: 1;
   width: 260px;
-  background-color: #558BD3;
+  background-color: #FE935A;
   overflow-y: auto;
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
@@ -308,37 +299,31 @@ header.is-fixed {
   -o-transform: translateX(80px);
   transform: translateX(80px);
 }
-
 #cd-lateral-nav .cd-navigation {
   margin: 10px 0 16px;
 }
-
 #cd-lateral-nav .sub-menu {
   padding: 0 10px 20px 15px;
   display: none;
 }
-
 #cd-lateral-nav a {
   display: block;
   line-height: 2em;
   padding: 0 16px 0 32px;
   color: white;
 }
-
 #cd-lateral-nav a.current {
-  background-color: rgb(22, 75, 33);
+  background-color: #F3B27C;
   color: #FFF;
 }
-
 .no-touch #cd-lateral-nav a:hover {
-  color: green;
+  color: red;
 }
 @media only screen and (min-width: 768px) {
   #cd-lateral-nav .cd-navigation {
     margin: 20px 0;
   }
 }
-
 #cd-lateral-nav.lateral-menu-is-open {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -360,7 +345,6 @@ header.is-fixed {
   font-weight: 600;
   /* this is the right arrow to show that the item has a submenu  */
 }
-
 #cd-lateral-nav .item-has-children > a::after {
   content: '';
   display: block;
@@ -384,7 +368,6 @@ header.is-fixed {
   -moz-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-
 #cd-lateral-nav .item-has-children > a.submenu-open::after {
   -webkit-transform: translateY(-50%) rotate(90deg);
   -moz-transform: translateY(-50%) rotate(90deg);
@@ -396,54 +379,44 @@ header.is-fixed {
 #cd-lateral-nav .socials {
   padding: 0 32px;
 }
-
 #cd-lateral-nav .socials:after {
   content: "";
   display: table;
   clear: both;
 }
-
 #cd-lateral-nav .socials a {
   height: 32px;
   width: 32px;
   float: left;
   padding: 0;
-  background-image: url("img/cd-socials.svg");
+  background-image: url("../img/cd-socials.svg");
   background-repeat: no-repeat;
   background-size: 128px 64px;
   background-color: #FFF;
   margin-right: .5em;
   border-radius: 0.25em;
 }
-
 #cd-lateral-nav .socials a.cd-twitter {
   background-position: 0 0;
 }
-
 #cd-lateral-nav .socials a.cd-github {
   background-position: -32px 0;
 }
-
 #cd-lateral-nav .socials a.cd-facebook {
   background-position: -64px 0;
 }
-
 #cd-lateral-nav .socials a.cd-google {
   background-position: -96px 0;
 }
-
 .no-touch #cd-lateral-nav .socials a:hover {
   background-color: #4e6361;
 }
-
 .no-touch #cd-lateral-nav .socials a:hover.cd-twitter {
   background-position: 0 -32px;
 }
-
 .no-touch #cd-lateral-nav .socials a:hover.cd-github {
   background-position: -32px -32px;
 }
-
 .no-touch #cd-lateral-nav .socials a:hover.cd-facebook {
   background-position: -64px -32px;
 }
@@ -451,143 +424,12 @@ header.is-fixed {
   background-position: -96px -32px;
 }
 
-div.introd p{
-  /* color: white; */
-  text-align: center;
-  font-family: "Titillium Web", sans-serif;
-  margin-bottom: 0px;
-  font-size: 20px;
-}
 
-div.introd{
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-div.col{
-  border: solid #B17A4A 5px;
-  border-radius: 10px;
-  margin-top: 30px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 15px;
-  background-color: #4cd2b0;
-  /* background-image: linear-gradient(-225deg,rgba(85, 139, 211,.3) 50% ,rgba(70, 220, 158,.3) 50%); */
-}
-
-/* div.col-md-5.col-sm-12.col-xs-12{
-  padding-left: 15px;
-  padding-right: 15px;
-  border: solid #B17A4A 5px;
-  border-radius: 10px;
-  background-image: linear-gradient(-225deg,rgba(85, 139, 211,.3) 50% ,rgba(70, 220, 158,.3) 50%);
-} */
-
-h1{
-  display: block;
-  text-align: center;
-  font-family: "Titillium Web", sans-serif;
-  color: white;
-}
-
-h2{
-  display: block;
-  text-align: center;
-  padding-top: 10px;
-  color: white;
-  font-family: "Titillium Web", sans-serif;
-  margin-bottom: 0px;
-}
-
-h3{
-  display: block;
-  font-family: "Titillium Web", sans-serif;
-  /* color: white; */
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 0px;
-  padding-top: 10px;
-}
-
-h5 {
-  display: block;
-  /* color: white; */
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 30px;
-  font-family: "Titillium Web", sans-serif;
-}
-
-h6{
-  display: block;
-  /* color: white; */
-  text-align: center;
-  font-family:  "Titillium Web", sans-serif;
-  margin-bottom: 0px;
-  font-size: 25px;
-  padding-bottom: 15px;
-}
-
-/* section{
-  width: 80%;
-  margin: 0 auto;
-} */
-
-div.container-fluid {
-overflow: hidden;
-margin-top: 50px;
-border: solid #B17A4A 5px;
-border-radius: 10px;
-margin-bottom: 30px;
-width: 100%;
-}
-
-.item {
-      display: block;
-      width: 100%;
-      height: 400px;
-}
-
-
-.item img {
-      height: 100%;
-      width: 100%;
-}
-
-div.col-sm-4.col-xs-12.col-lg-6.text-center {
-  float: left;
-  padding-bottom: 30px;
-}
-
-/*SLIDER SHOW*/
-
-/*FOOTER*/
-footer.container{
- overflow: hidden;
- margin-top: 30px;
- border: solid #B17A4A 5px;
- border-radius: 10px;
- /* background-color: rgba(255,255,255,.5) */
- background-image: linear-gradient(-225deg,rgba(85, 139, 211,.3) 50% ,rgba(70, 220, 158,.3) 50%);
- /* text-align: center; */
- color: #B17A4A;
-}
-
-div.contacto {
-float: right;
-}
-
-div.contacto p {
-margin-bottom: 0px;
-text-align: right;
-font-size: 15px;
-}
-/* Formularios*/
+/* FORMULARIO */
 
 .registrate {
   text-align: center;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'segoe script';
 }
 
 .reg-info {
@@ -604,13 +446,13 @@ form {
     margin: 2% auto;
     box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
     padding: 2%;
-    background-image: linear-gradient(-225deg,rgba(70, 220,158,.5) 50% ,rgba(85, 139, 211,.5) 50%);
+    background-image: linear-gradient(-225deg, #f995448a 50%, #274d88bf 50%);
 }
 
 .form-container {
 	/* max-width: 350px; */
+  width: 40%;
 	margin: 0 auto;
-  background-color: background-color: #e85c6a;
 }
 
 .form-container h1 {
@@ -655,7 +497,7 @@ form {
 
 .access-form button {
 	font-size: 16px;
-  background-color: #e85c6a;;
+  background-color: #e85c6a;
   border: 1px solid white;
   color: white;
   text-transform: capitalize;
@@ -666,7 +508,7 @@ form {
 }
 
 select{
-  font-family: "Titillium Web", sans-serif;
+  font-family: segoe script;
 }
 
 .input-item {
@@ -712,6 +554,7 @@ button {
     display: inline-block;
     /* width: 280px; */
     height: 50px;
+
     padding: 0 20px;
     border-radius: 5px;
     outline: none;
@@ -720,289 +563,4 @@ button {
     text-align: center;
     transition: all 0.2s linear;
     letter-spacing: 0.05em;
-}
-
-
-
-/* QA*/
-
-#cd-top-nav a {
-  text-decoration: none;
-}
-
-a.button.product{
-  position: absolute;
-  left: 195px;
-}
-
-div.ColumnaTextoFaq{
-  margin-top: 100px;
-  margin-bottom: 100px;
-  padding-left: 25px;
-  padding-right: 20px;
-  overflow: hidden;
-  border-radius: 10px;
-  border: solid #B17A4A 5px;
-  background-color: #4cd2b0;
-  /* background-image: linear-gradient(-225deg,rgba(70, 220,158,.3) 50% ,rgba(85, 139, 211,.3) 50%); */
-  /* color: #B17A4A; */
-}
-
-div.Redes{
-  position: absolute;
-  left: 85%;
-  top: 20px;
-}
-
-/*Catálogo*/
-
-.cascada{
-  padding-left: 15px;
-  color: white;
-  font-family: "Titillium Web", sans-serif;
-}
-
-form.woocommerce-ordering{
-color: black;
-}
-
-ul.pagination {
-    border: 1px solid rgba(0,0,0,.05);
-    border-width: 1px 0;
-
-}
-
-span{
-  color: white;
-  /* display: block; */
-  text-align: center;
-}
-
-div.site-content{
-  margin-top: 100px;
-  padding-left: 15px;
-  padding-right: 15px;
-  overflow: hidden;
-  border-radius: 10px;
-  border: solid #B17A4A 5px;
-  background-color: #4cd2b0;
-  /* background-image: linear-gradient(-225deg,rgba(70, 220,158,.3) 50% ,rgba(85, 139, 211,.3) 50%); */
-}
-
-/* div.categories{
-  display: block; */
-  /* text-align: center; */
-  /* padding-left: 25px; */
-  /* background-size: contain;
-  background-image: url(../img/background.jpg);
-  background-repeat: repeat-y; */
-  /* background-color: #e85c6a; */
-  /* background-image: linear-gradient(-225deg, #f995448a 50%, #274d88bf 50%); */
-/* }
-ul.product-categories{
-  color: white;
-  background-color: #e85c6a;
-  opacity: 0.5;
-} */
-
-.title{
-  font-family: "Titillium Web", sans-serif;
-  /* color: white; */
-  font-size: 20px;
-}
-
-div.storefront{
-  background-image: linear-gradient(-225deg, #46DC9E 50%, #558BD3 50%);
-}
-
-/* CONTACTO */
-
-main.cd-main-content-contacto {
-  overflow: hidden;
-}
-
-.formulario-contacto {
-  float: left;
-  position: absolute;
-}
-
-.access-form-contacto {
- margin-top: 100px;
- margin-bottom: 0px;
- overflow: hidden;
- border-radius:  10px;
- border: solid #B17A4A 5px;
- background-image: linear-gradient(-225deg,rgba(70, 220,158,.3) 50% ,rgba(85, 139, 211,.3) 50%);
-}
-
-div.field-group {
-  border-radius: 10px;
-  display: block;
-  margin: auto;
-  width: 100%;
-}
-
-input#nombre{
-  border-radius: 10px;
-  display: block;
-  margin: auto;
-}
-
-input#email{
-  border-radius: 10px;
-  display: block;
-  margin: auto;
-}
-
-input#Telefono{
-  border-radius: 10px;
-  display: block;
-  margin: auto;
-}
-
-textarea#comentarios {
-  width: 90%;
-  border-radius: 10px;
-  display: block;
-  margin: auto;
-  height: 80px;
-  padding: 10px;
-  color: grey;
-}
-
-div.field-group p {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-size: 16px;
-}
-
-button.enviar-msj {
-  opacity: 75%;
-  text-align: center;
-  font-size: 20px;
-  width: 32%;
-  display: block;
-  margin: auto;
-  margin-bottom: 10px;
-}
-
-.enviar-msj {
-  color: white;
-  text-align: center;
-  background-color: #B17A4A;
-  border-radius: 5px;
-  height: 6%;
-  margin-top: 1px;
-}
-
-#mapa-contacto.col-8 {
-  margin-top:100px;
-  position: relative;
-  float: right;
-  border-radius:  10px;
-  border: solid #B17A4A 3px;
-  padding: 0px;
-}
-
-iframe {
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  height: 100%;
-  border-radius:10px;
-}
-
-
-/*LOGIN*/
-/*div.col.col-lg-5 h2 {
-  font-family: "Titillium Web", sans-serif;
-  color: white;
-}
-div.col.col-lg-5 h5 {
-  font-family: "Titillium Web", sans-serif;
-  color: white;
-}
-
-div.col.col-lg-5 {
-  margin-top: 20px;
-}
-
-form.access-form-login{
-  border-radius: 5px;
-  padding: 10px;
-  border: solid 8px grey;
-}*/
-
-h2.reg {
-  margin-top: 15px;
-}
-
-#login-input {
-  width: 80%;
-  margin: auto;
-}
-div.botones-login{
-  height: 10%;     
-}
-
-button.btn.btn-primary.btn-sm {
-  height: 100%;
-}
-button.btn.btn-secondary.btn-sm {
-  height: 100%;
-}
-
-h5.reg {
-  color: white;
-  margin-top:15px;
-}
-
-/*REGISTRO*/
-
-.form-container-registro {
-  margin-top: 80px;
-/* div.col.col-lg-6 {
-  margin-top: 20px;
-}
-
-form.access-form-registro {
-  border: solid #B17A4A 4px;
-  border-radius: 5px;
-  padding: 10px;
-} */
-
-.form-container-registro {
-  margin-top: 80px;
-}
-
-form.access-form-registro {
-  border: solid #B17A4A 4px;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-h3.reg {
-  margin-bottom: 15px;
-  text-align: left;
-}
-
-.errores {
-  font-weight: bold;
-}
-
-/**/
-
-div.img-contenedor{
- margin-bottom: 100px;
- display: block;
-  overflow:hidden;
-}
-img.img-perfil{
-
-}
-
-.error{
-  display: block;
-  color: red;
-  width: 100%;
 }

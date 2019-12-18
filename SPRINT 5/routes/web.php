@@ -70,4 +70,4 @@ Route::get('/perfil', 'PerfilController@mostrar');
 
 Route::get('/perfil/editar', 'PerfilController@editar');
 
-Route::post('/perfil/guardar', 'PerfilController@guardar');
+Route::post('/perfil', ['as'=>'upload.image','uses'=>'PerfilController@guardar']);
