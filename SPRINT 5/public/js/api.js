@@ -5,8 +5,37 @@ var campoNombreUsuario = document.querySelector('input[name=name]');
 var campoEmail = document.querySelector('input[name=email]');
 var campoNombre = document.querySelector('input[name=nombre]');
 var campoApellido = document.querySelector('input[name=apellido]');
+var campoFechaNac = document.querySelector('input[name=fecha_nac]');
 var campoPassword = document.querySelector('input[name=password]');
 var campoCp = document.querySelector('input[name=cp]');
+
+campoNombreUsuario.onblur = function (){
+    if (this.value.trim == ''){
+        document.getElementById("name").style.boxShadow = "red";
+        alert ('Debe ingresar un nombre de usuario');
+    } else if (this.value.length < 5) {
+        alert ('El nombre de usuario debe tener mas de 5 letras');
+    }
+};
+var regexMail = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+campoEmail.onblur = function (){
+    if (this.value.trim == ''){
+        alert ('Debe ingresar un E-mail');
+    } else if (!regexMail.test(this.value)) {
+        alert ('Ingrese un E-mail valido');
+    }
+};
+
+
+var regexCp =/^\d+$/;
+campoCp.onblur = function (){
+   if (this.value.length != 4){
+    alert ('El codigo postal debe tener 4 numeros');
+   } else if (!regexCp.test(this.value)){
+        alert ('Ingrese un codigo postal valido');
+}
+};
 
 
 //API PROVINCIA-MUNICIPIO

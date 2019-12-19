@@ -155,8 +155,9 @@
           <a class="cd-facebook cd-img-replace" href="#0">Facebook</a>
           </div>
    </nav>
-<script>
-	$("#formRegistro").validate({
+   
+{{-- <script>
+$("#formRegistro").validate({
         rules: {
             name: {
                 required: true,
@@ -171,7 +172,7 @@
         }
 		
     });
-</script>
+</script> --}}
 
 </body>
 <script src="js/bootstrap.min.js"></script>

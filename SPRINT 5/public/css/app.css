@@ -500,6 +500,7 @@ h2{
 }
 
 h3{
+  color:white;
   display: block;
   font-family: "Titillium Web", sans-serif;
   /* color: white; */
@@ -1005,4 +1006,9 @@ img.img-perfil{
   display: block;
   color: red;
   width: 100%;
+}
+
+
+h3.reg {
+  color: white;
 }
