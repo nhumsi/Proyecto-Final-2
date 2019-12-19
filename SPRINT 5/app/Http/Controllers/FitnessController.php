@@ -67,4 +67,13 @@ class FitnessController extends Controller
 
         return redirect('/fitness');
     }
+
+    public function detalleFitness($id)
+    {
+        $producto = Fitness::find($id);
+        
+        return view('detalle', compact('producto'));
+    }
+
+
 }

@@ -48,7 +48,16 @@ Route::get('/carrito', function(){
 Route::get('/ABM',function(){
     return view('ABM');
 });
-Route::post('/ABM/guardar', 'FitnessController@guardar');
+
+Route::get('/ABM/fitness/{id}', 'FitnessController@detalleFitness');
+Route::get('/ABM/yoga/{id}', 'FitnessController@detalleYoga');
+Route::get('/ABM/otros/{id}', 'FitnessController@detalleOtros   ');
+
+Route::post('/ABM/fitness/{id}', 'FitnessController@editarFitness');
+Route::post('/ABM/yoga/{id}', 'FitnessController@editarYoga');
+Route::post('/ABM/otros/{id}', 'FitnessController@editarOtros');
+
+
 
 Route::get('/QA', function(){
     return view('QA');

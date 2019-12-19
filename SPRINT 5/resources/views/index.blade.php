@@ -153,7 +153,7 @@
         </div>
         <div class="col-md-7 col-sm-12 col-xs-12 borde">
           <h2 class="text-center mb15">Nuestro Local </h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.416679386339!2d-65.20679108495698!3d-26.826696283164594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c1734e49493%3A0x43d9198da5a76d38!2sPcia%20de%20C%C3%B3rdoba%20565%2C%20T4000DGK%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1573689580598!5m2!1ses-419!2sar" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.416679386339!2d-65.20679108495698!3d-26.826696283164594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c1734e49493%3A0x43d9198da5a76d38!2sPcia%20de%20C%C3%B3rdoba%20565%2C%20T4000DGK%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1573689580598!5m2!1ses-419!2sar" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </footer>
 
