@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
   <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
-
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -19,28 +19,28 @@
     <title>Shanti | Preguntas Frecuentes</title>
   </head>
   <body>
-    <div class="container"> <!-- Contenedor ppal -->
-      <header class="main-header">
-        <a id="cd-logo" href="index.html"><img src="css/img/logo.png" alt="Homepage"></a>
-          <nav id="cd-top-nav">
-            <ul>
-            <li><a href="/home">Home</a></li>
-            <li>
-              @auth
+    <header class="main-header">
+      <a id="cd-logo" href="index.html"><img src="css/img/logo.png" alt="Homepage"></a>
+      <nav id="cd-top-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li>
+            @auth
             <a href="/perfil">Perfil</a>
-              @endauth
-              @guest
-              <a href="/login">Iniciar sesion</a>
-              @endguest
-
-
-            </li>
-            </ul>
-          </nav>
-        <a id="cd-menu-trigger" href=""><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
-        </header>
-
+            @endauth
+            @guest
+            <a href="/login">Iniciar sesion</a>
+            @endguest
+            
+            
+          </li>
+        </ul>
+      </nav>
+      <a id="cd-menu-trigger" href="" style="background-color:#558BD3"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
+    </header>
+    
     <main class="qa">
+      <div class="container"> <!-- Contenedor ppal -->
       <div class="ColumnaTextoFaq">
         <h2>Preguntas Frecuentes</h2>
         <br>

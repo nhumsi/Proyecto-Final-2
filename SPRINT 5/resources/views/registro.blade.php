@@ -28,8 +28,8 @@
 		<a id="cd-logo" href="index.html"><img src="img/logo.png" alt="Homepage"></a>
 		  <nav id="cd-top-nav">
 			  <ul>
-				<li><a href="/home">Home</a></li>
-				<li><a href="/login">Login</a></li>
+				<li><a href="/">Home</a></li>
+				<li><a href="/login">Iniciar sesion</a></li>
 			  </ul>
 		  </nav>
 		<a id="cd-menu-trigger" href=""><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>

@@ -29,7 +29,7 @@
         <a id="cd-logo" href="index.html"><img src="css/img/logo.png" alt="Homepage"></a>
           <nav id="cd-top-nav">
             <ul>
-            <li><a href="/index">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li>
               @auth
             <a href="/perfil">Perfil</a>

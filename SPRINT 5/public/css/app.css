@@ -6,11 +6,7 @@
 }
 
 body {
-<<<<<<< HEAD
   height: 100%;
-=======
-  /* overflow: hidden; */
->>>>>>> SPRINT5
   background-size: 20%;
   background-image: url(img/background10.jpg);
 
@@ -46,7 +42,6 @@ html, body {
 }
 
 body {
-  font-size: 100%;
   font-family: "Titillium Web", sans-serif;
   color: white;
 }
@@ -149,7 +144,7 @@ header.is-fixed {
   width: 20%;
 }
 @media only screen and (min-width: 768px) {
-  body {
+body {
 
   }
 }
@@ -170,6 +165,7 @@ header.is-fixed {
   margin-right: 1em;
 }
 #cd-top-nav a {
+  font-family: "Titillium Web", sans-serif;
   display: inline-block;
   padding: .5em;
   color: #FFF;
@@ -197,6 +193,7 @@ header.is-fixed {
   background-color: (rgba(85, 139, 211,.3) 50%);
 }
 #cd-menu-trigger .cd-menu-text {
+  font-family: "Titillium Web", sans-serif;
   height: 100%;
   text-transform: uppercase;
   color: white;
@@ -270,6 +267,7 @@ header.is-fixed {
     padding-left: 1.25em;
   }
   #cd-menu-trigger .cd-menu-text {
+    font-family: "Titillium Web", sans-serif;
     display: inline-block;
     line-height: 70px;
   }
@@ -319,6 +317,7 @@ header.is-fixed {
 }
 
 #cd-lateral-nav a {
+  font-family: "Titillium Web", sans-serif;
   display: block;
   line-height: 2em;
   padding: 0 16px 0 32px;
@@ -326,12 +325,12 @@ header.is-fixed {
 }
 
 #cd-lateral-nav a.current {
-  background-color: rgb(22, 75, 33);
+  background-color: red;
   color: #FFF;
 }
 
 .no-touch #cd-lateral-nav a:hover {
-  color: green;
+  color: red;
 }
 @media only screen and (min-width: 768px) {
   #cd-lateral-nav .cd-navigation {
@@ -475,6 +474,13 @@ div.col{
   /* background-image: linear-gradient(-225deg,rgba(85, 139, 211,.3) 50% ,rgba(70, 220, 158,.3) 50%); */
 }
 
+div.col-md-7.col-sm-12.col-xs-12.col-lg-7 {
+  height: 230px;
+}
+
+div.col-md-7.col-sm-12.col-xs-12.col-lg-7 h2{
+  margin-bottom: 20px;
+}
 /* div.col-md-5.col-sm-12.col-xs-12{
   padding-left: 15px;
   padding-right: 15px;
@@ -611,7 +617,7 @@ form {
 .form-container {
 	/* max-width: 350px; */
 	margin: 0 auto;
-  background-color: background-color: #e85c6a;
+  background-color: #e85c6a;
 }
 
 .form-container h1 {
@@ -962,6 +968,7 @@ h5.reg {
 
 .form-container-registro {
   margin-top: 80px;
+}
 /* div.col.col-lg-6 {
   margin-top: 20px;
 }
@@ -977,14 +984,15 @@ form.access-form-registro {
 }
 
 form.access-form-registro {
-  border: solid #B17A4A 4px;
+ 
   border-radius: 5px;
   padding: 10px;
 }
 
 h3.reg {
+  font-family: 'Titillium Web', sans-serif;
   margin-bottom: 15px;
-  text-align: left;
+  text-align: center;
 }
 
 .errores {

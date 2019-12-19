@@ -19,25 +19,24 @@
 
 <body>
   <header class="main-header">
-    <a id="cd-logo" href="index.html"><img src="img/logo.png" alt="Homepage"></a>
+    <a id="cd-logo" href="index.html"><img src="css/img/logo.png" alt="Homepage"></a>
       <nav id="cd-top-nav">
-          <ul>
-            <li><a href="/home">Home</a></li>
-            <li><a>{{$usuario ->nombre." ".$usuario ->apellido}}</a></li>
-            <li><a class="" href="{{ route('logout') }}"
-                onclick="event.preventDefault();
-                              document.getElementById('logout-form').submit();">
-                 {{ __('Cerrar sesion') }}
-             </a>
+        <ul>
+        <li><a href="/">Home</a></li>
+        <li>
+          @auth
+        <a href="/perfil">Perfil</a>
+          @endauth
+          @guest
+          <a href="/login">Iniciar sesion</a>
+          @endguest
 
-             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                 @csrf
-             </form>
-            </li>
-          </ul>
+
+        </li>
+        </ul>
       </nav>
-    <a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
-  </header>
+    <a id="cd-menu-trigger" href=""><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
+    </header>
     <main class="cd-main-content-contacto">
      <div id="main-contacto" class="row">
                  <div id="formulario-contacto "class="col-lg-3">

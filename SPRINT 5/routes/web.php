@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index');
 
 Route::get('/index', function(){
     return view('index');
@@ -77,7 +77,7 @@ Route::post('/registro/guardar', 'RegistroController@guardar');
 
 Route::get('/prueba', 'PruebaController@listadoFitness');
 
-Route::get('/perfil', 'PerfilController@mostrar');
+Route::get('/perfil', 'PerfilController@mostrar')->middleware('auth');
 
 Route::get('/perfil/editar', 'PerfilController@editar');
 

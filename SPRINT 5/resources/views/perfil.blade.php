@@ -6,7 +6,8 @@
     <title>Shanti | Perfil</title>
 		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-		<script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -19,7 +20,7 @@
     <a id="cd-logo" href="index.html"><img src="img/logo.png" alt="Homepage"></a>
       <nav id="cd-top-nav">
           <ul>
-            <li><a href="/home">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a>{{$usuario->nombre." ".$usuario->apellido}}</a></li>
             <li><a class="" href="{{ route('logout') }}"
                 onclick="event.preventDefault();

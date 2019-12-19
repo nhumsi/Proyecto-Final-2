@@ -25,7 +25,7 @@
 		<a id="cd-logo" href="index.html"><img src="img/logo.png" alt="Homepage"></a>
 		  <nav id="cd-top-nav">
 			  <ul>
-				<li><a href="/home">Home</a></li>
+				<li><a href="/">Home</a></li>
 				<li><a href="/login">Login</a></li>
 			  </ul>
 		  </nav>

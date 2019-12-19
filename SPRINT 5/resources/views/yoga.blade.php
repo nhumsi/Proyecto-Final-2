@@ -10,7 +10,7 @@
 <{{-- <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' /> --}}
 {{-- <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700' rel='stylesheet' type='text/css'> --}}
-<link rel="stylesheet" href="css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 <script src="js/modernizr.js"></script> <!-- Modernizr -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -31,7 +31,7 @@
 			<a id="cd-logo" href="index.html"><img src="img/logo.png" alt="Homepage"></a>
 			  <nav id="cd-top-nav">
 				  <ul>
-					<li><a href="/home">Home</a></li>
+					<li><a href="/">Home</a></li>
 					<li><a href="/login">Login</a></li>
 				  </ul>
 			  </nav>
