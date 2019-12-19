@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shanti | Registro</title>
 	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700' rel='stylesheet' type='text/css'>
-	
+
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	
+
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-	
+
 	<script src="js/jquery-3.4.1.js"></script>
 	<script src="js/jquery.validate.js"></script>
 	<script src="js/signup-form.js"></script>
@@ -19,8 +19,8 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="css/app.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		
-		
+
+
 </head>
 
 <body>
@@ -28,9 +28,9 @@
 		<a id="cd-logo" href="index.html"><img src="img/logo.png" alt="Homepage"></a>
 		  <nav id="cd-top-nav">
 			  <ul>
-				<li><a href="/index">Home</a></li>
+				<li><a href="/home">Home</a></li>
 				<li><a href="/login">Login</a></li>
-			  </ul> 	 	 
+			  </ul>
 		  </nav>
 		<a id="cd-menu-trigger" href=""><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
 	  </header>
@@ -41,16 +41,16 @@
 						<form class="access-form-registro" id="formRegistro" action="/registro/guardar" method="post">
 							@csrf
 							<h3 class="reg">Formulario de Registro</h3>
-							
+
 							<br>
 							<ul style="color:red" class="errores">
 								@foreach ($errors->all() as $error)
 									<li>
 										{{$error}}
 									</li>
-									
+
 								@endforeach
-							</ul> 
+							</ul>
 							<div class="input-group mb-3">
 									<div class="input-group-prepend">
 										  <span class="input-group-text" id="basic-addon1">Nombre de usuario:</span>
@@ -106,7 +106,7 @@
 										<div class="input-group-prepend">
 										<span class="input-group-text" id="basic-addon1">Codigo Postal:</span>
 										</div>
-										<input type="text" class="form-control" placeholder="" name="cp" id="cp" value="{{old("cp")}}">	
+										<input type="text" class="form-control" placeholder="" name="cp" id="cp" value="{{old("cp")}}">
 									</div>
 									<div class="input-group mb-3">
 										<div class="input-group-prepend">
@@ -116,7 +116,7 @@
 										<div class="input-group-prepend">
 											<span class="input-group-text" id="basic-addon1">Localidad:</span>
 										</div>
-										<input type="text" class="form-control" placeholder="" name="localidad" id="localidad" value="{{old("localidad")}}">	
+										<input type="text" class="form-control" placeholder="" name="localidad" id="localidad" value="{{old("localidad")}}">
 									</div>
 									<div class="botones">
 										<button type="submit" class="btn btn-lg btn-primary">Enviar</button>
@@ -133,11 +133,9 @@
           <li class="item-has-children">
             <a href="#0">Productos</a>
             <ul class="sub-menu">
-              <li><a href="#0">1</a></li>
-              <li><a href="#0">2</a></li>
-              <li><a href="#0">3</a></li>
-              <li><a href="#0">4</a></li>
-              <li><a href="#0">5</a></li>
+              <li><a href="/fitness">Fitness</a></li>
+              <li><a href="/yoga">Yoga</a></li>
+              <li><a href="/OtrosProductos">Otros Productos</a></li>
             </ul>
           </li>
         </ul>
@@ -151,11 +149,11 @@
 
 
         <div class="cd-navigation socials">
-          <a class="cd-twitter cd-img-replace" href="#0">Twitter</a>
-          <a class="cd-facebook cd-img-replace" href="#0">Facebook</a>
+          <a class="cd-twitter cd-img-replace" href="https://twitter.com/shanti_bisu">Twitter</a>
+          <a class="cd-facebook cd-img-replace" href="https://www.facebook.com/shantiinsumos33">Facebook</a>
           </div>
    </nav>
-   
+
 {{-- <script>
 $("#formRegistro").validate({
         rules: {
@@ -170,7 +168,7 @@ $("#formRegistro").validate({
                 minlength: "<br>El nombre de usuario debe contener mas de 5 caracteres"
             }
         }
-		
+
     });
 </script> --}}
 

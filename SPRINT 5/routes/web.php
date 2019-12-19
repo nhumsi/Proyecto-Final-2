@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/index', function(){
     return view('index');
@@ -44,6 +44,9 @@ Route::post('/registro/guardar', 'RegistroController@guardar');
 Route::get('/carrito', function(){
     return view('carrito');
 } );
+
+Route::get('/carrito/{id}', 'FitnessController@detalleVenta');
+Route::post('/carrito/agregar', 'FitnessController@agregar');
 
 Route::get('/ABM',function(){
     return view('ABM');

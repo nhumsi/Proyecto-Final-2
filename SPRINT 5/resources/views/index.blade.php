@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -14,7 +13,7 @@
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -25,6 +24,7 @@
     {{-- <section> --}}
 
     <div class="container"> <!-- Contenedor ppal -->
+
       <header class="main-header">
         <a id="cd-logo" href="index.html"><img src="css/img/logo.png" alt="Homepage"></a>
           <nav id="cd-top-nav">
@@ -32,13 +32,13 @@
             <li><a href="/index">Home</a></li>
             <li>
               @auth
-            <a href="/perfil">Perfil</a>                  
+            <a href="/perfil">Perfil</a>
               @endauth
               @guest
-              <a href="/login">Iniciar sesion</a>      
+              <a href="/login">Iniciar sesion</a>
               @endguest
             </li>
-            </ul> 	 	 
+            </ul>
           </nav>
         <a id="cd-menu-trigger" href=""><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
         </header>
@@ -172,44 +172,34 @@
           <li class="item-has-children">
             <a href="#0">Productos</a>
             <ul class="sub-menu">
-              <li><a href="#0">Fitness</a></li>
-              <li><a href="#0">Yoga</a></li>
-              <li><a href="#0">Otros Productos</a></li>
+              <li><a href="/fitness">Fitness</a></li>
+              <li><a href="/yoga">Yoga</a></li>
+              <li><a href="/OtrosProductos">Otros Productos</a></li>
             </ul>
           </li>
         </ul>
 
         <ul class="cd-navigation cd-single-item-wrapper">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Preguntas frecuentes</a></li>
-          <li><a href="#">Catálogo</a></li>
-          <li><a href="#">Registro</a></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/registro">Registrarse</a></li>
+          <li><a href="/QA">Preguntas Frecuentes</a></li>
+          <li><a href="/contacto">Contacto</a></li>
         </ul>
 
         <div class="cd-navigation socials">
-          <a class="cd-twitter cd-img-replace" href="#0">Twitter</a>
-          <a class="cd-facebook cd-img-replace" href="#0">Facebook</a>
+          <a class="cd-twitter cd-img-replace" href="https://twitter.com/shanti_bisu">Twitter</a>
+          <a class="cd-facebook cd-img-replace" href="https://www.facebook.com/shantiinsumos33">Facebook</a>
         </div>
       </nav>
     </div>
 
   {{-- </section> --}}
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
-<script src="js/bootstrap.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/main.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="js/vegas.min.js"></script>
-<script src="js/responsiveslides.min.js"></script>
-<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  </body>
-</html>
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="js/main.js"></script> <!-- Resource jQuery -->
+    </body>
+  </html>

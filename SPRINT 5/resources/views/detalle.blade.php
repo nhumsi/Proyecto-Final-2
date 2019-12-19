@@ -25,7 +25,7 @@
 		<a id="cd-logo" href="index.html"><img src="img/logo.png" alt="Homepage"></a>
 		  <nav id="cd-top-nav">
 			  <ul>
-				<li><a href="/index">Home</a></li>
+				<li><a href="/home">Home</a></li>
 				<li><a href="/login">Login</a></li>
 			  </ul>
 		  </nav>
@@ -99,11 +99,9 @@
           <li class="item-has-children">
             <a href="#0">Productos</a>
             <ul class="sub-menu">
-              <li><a href="#0">1</a></li>
-              <li><a href="#0">2</a></li>
-              <li><a href="#0">3</a></li>
-              <li><a href="#0">4</a></li>
-              <li><a href="#0">5</a></li>
+              <li><a href="/fitness">Fitness</a></li>
+              <li><a href="/yoga">Yoga</a></li>
+              <li><a href="/OtrosProductos">Otros Productos</a></li>
             </ul>
           </li>
         </ul>
@@ -117,8 +115,8 @@
 
 
         <div class="cd-navigation socials">
-          <a class="cd-twitter cd-img-replace" href="#0">Twitter</a>
-          <a class="cd-facebook cd-img-replace" href="#0">Facebook</a>
+          <a class="cd-twitter cd-img-replace" href="https://twitter.com/shanti_bisu">Twitter</a>
+          <a class="cd-facebook cd-img-replace" href="https://www.facebook.com/shantiinsumos33">Facebook</a>
           </div>
    </nav>
 

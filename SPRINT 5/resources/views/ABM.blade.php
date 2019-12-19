@@ -9,8 +9,6 @@
 		<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 		<link rel="stylesheet" href="css/styles.css"> <!-- Resource style -->
 		<script src="js/modernizr.js"></script> <!-- Modernizr -->
-
-
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -21,16 +19,23 @@
 </head>
 
 <body>
-    <header class="main-header">
-		<a id="cd-logo" href="index.html"><img src="img/logo.png" alt="Homepage"></a>
-		  <nav id="cd-top-nav">
-			  <ul>
-				<li><a href="/index">Home</a></li>
-				<li><a href="/login">Login</a></li>
-			  </ul>
-		  </nav>
-		<a id="cd-menu-trigger" href=""><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
-	  </header>
+  <header class="main-header">
+    <a id="cd-logo" href="index.html"><img src="css/img/logo.png" alt="Homepage"></a>
+      <nav id="cd-top-nav">
+        <ul>
+        <li><a href="/home">Home</a></li>
+        <li>
+          @auth
+        <a href="/perfil">Perfil</a>
+          @endauth
+          @guest
+          <a href="/login">Iniciar sesion</a>
+          @endguest
+        </li>
+        </ul>
+      </nav>
+    <a id="cd-menu-trigger" href=""><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
+    </header>
 	    <main class="cd-main-content-contacto">
 			<section class="form-container-registro">
 				<div class="row justify-content-md-center">
@@ -106,11 +111,9 @@
           <li class="item-has-children">
             <a href="#0">Productos</a>
             <ul class="sub-menu">
-              <li><a href="#0">1</a></li>
-              <li><a href="#0">2</a></li>
-              <li><a href="#0">3</a></li>
-              <li><a href="#0">4</a></li>
-              <li><a href="#0">5</a></li>
+              <li><a href="/fitness">Fitness</a></li>
+              <li><a href="/yoga">Yoga</a></li>
+              <li><a href="/OtrosProductos">Otros Productos</a></li>
             </ul>
           </li>
         </ul>
@@ -124,8 +127,8 @@
 
 
         <div class="cd-navigation socials">
-          <a class="cd-twitter cd-img-replace" href="#0">Twitter</a>
-          <a class="cd-facebook cd-img-replace" href="#0">Facebook</a>
+          <a class="cd-twitter cd-img-replace" href="https://twitter.com/shanti_bisu">Twitter</a>
+          <a class="cd-facebook cd-img-replace" href="https://www.facebook.com/shantiinsumos33">Facebook</a>
           </div>
    </nav>
 

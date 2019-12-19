@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-<meta name="generator" content="WordPress 4.9.11" />
-<meta name="generator" content="WooCommerce 3.4.5" />
-<!-- <link rel="profile" href="http://gmpg.org/xfn/11"> -->
-<title>Shanti | Catalogo </title>
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-<script src="js/modernizr.js"></script> <!-- Modernizr -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/app.css">
-<link rel='stylesheet' id='storefront-fonts-css'  href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,700,900&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='storefront-woocommerce-style-css'  href='http://yogayfitness.com.ar/compras/wp-content/themes/storefront/assets/sass/woocommerce/woocommerce.css?ver=4.9.11' type='text/css' media='all' />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		{{-- <meta name="generator" content="WordPress 4.9.11" />
+		<meta name="generator" content="WooCommerce 3.4.5" /> --}}
+		<!-- <link rel="profile" href="http://gmpg.org/xfn/11"> -->
+		<title>Shanti | Catalogo </title>
+		{{-- <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+		<link rel='dns-prefetch' href='//s.w.org' /> --}}
+		{{-- <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700' rel='stylesheet' type='text/css'> --}}
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+		<script src="js/modernizr.js"></script> <!-- Modernizr -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		{{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> --}}
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		{{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> --}}
+		<link rel="stylesheet" href="css/app.css">
+		{{-- <link rel='stylesheet' id='storefront-fonts-css'  href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,700,900&#038;subset=latin%2Clatin-ext' type='text/css' media='all' /> --}}
+		<link rel='stylesheet' id='storefront-woocommerce-style-css'  href='http://yogayfitness.com.ar/compras/wp-content/themes/storefront/assets/sass/woocommerce/woocommerce.css?ver=4.9.11' type='text/css' media='all' />
 	</head>
 
   <body>
 		<div class="container">
 
-      <header class="main-header">
-        <a id="cd-logo" href="catalogo"><img src="css/img/logo.png" alt="Compras"></a>
-        <nav id="cd-top-nav">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Preguntas frecuentes</a></li>
-            <li><a href="#">Catálogo</a></li>
-            <li><a href="#">Registro</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
-        <a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
-      </header>
+			<header class="main-header">
+				<a id="cd-logo" href="index.html"><img src="css/img/logo.png" alt="Homepage"></a>
+					<nav id="cd-top-nav">
+						<ul>
+						<li><a href="/home">Home</a></li>
+						<li>
+							@auth
+						<a href="/perfil">Perfil</a>
+							@endauth
+							@guest
+							<a href="/login">Iniciar sesion</a>
+							@endguest
+
+
+						</li>
+						</ul>
+					</nav>
+				<a id="cd-menu-trigger" href=""><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
+				</header>
 
     	<div id="content" class="site-content" tabindex="-1">
     	 <div class="col-full">
@@ -51,7 +56,7 @@
     			  <h1 class="woocommerce-products-header__title page-title">Catálogo | Fitness</h1>
 						<br>
 						<br>
-						
+
           {{-- <div class="storefront-sorting">
             <form class="woocommerce-ordering" method="get">
               <select name="orderby" class="orderby">
@@ -144,45 +149,6 @@
 				  </ul>
 	      </main><!-- #main -->
     		</div><!-- #primary -->
-
-		    <div id="secondary" class="widget-area" role="complementary">
-					<div id="woocommerce_product_categories-3" class="widget woocommerce widget_product_categories">
-		        <span class="gamma widget-title">Categorías de los productos</span>
-		          <ul class="product-categories">
-		            <li class="cat-item cat-item-11 cat-parent"><a href="#Fitness">Fitness</a>
-		              <ul class='children'>
-		                <li class="cat-item cat-item-14"><a href="">Accesorios</a></li>
-		                <li class="cat-item cat-item-12"><a href="">Indumentarias</a></li>
-		              </ul>
-		            </li>
-		            <li class="cat-item cat-item-10 cat-parent"><a href="">Yoga</a>
-		              <ul class='children'>
-		                <li class="cat-item cat-item-17"><a href="">Decoración</a></li>
-		                <li class="cat-item cat-item-20"><a href="">Accesorios</a></li>
-		              </ul>
-		            </li>
-		            <li class="cat-item cat-item-8 current-cat"><a href="">Otros Productos</a></li>
-		            {{-- <li class="cat-item cat-item-190"><a href="">Promociones</a></li>
-		            <li class="cat-item cat-item-118"><a href="">Rehabilitacion</a></li> --}}
-		        </ul>
-					</div>
-		      {{-- <div id="woocommerce_price_filter-5" class="widget woocommerce widget_price_filter">
-		        <form method="get" action="">
-		    			<div class="price_slider_wrapper">
-		    				<div class="price_slider" style="display:none;"></div>
-		    				<div class="price_slider_amount">
-		    					<input type="text" id="min_price" name="min_price" value="250" data-min="250" placeholder="Precio mínimo" />
-		    					<input type="text" id="max_price" name="max_price" value="1100" data-max="1100" placeholder="Precio máximo" />
-		    					<button type="submit" class="button">Filtrar</button>
-		    					<div class="price_label" style="display:none;">
-		    						Precio: <span class="from"></span> &mdash; <span class="to"></span>
-		    					</div>
-		    					<div class="clear"></div>
-		    				</div>
-		    			</div>
-		    		</form>
-	      	</div> --}}
-    		</div><!-- #secondary -->
   			</div><!-- .col-full -->
     	</div><!-- #content -->
 		</div>
@@ -212,7 +178,7 @@
 							</li>
 							<li class="cart">
 								<a class="footer-cart-contents" href="" title="Ver carrito de la compra">
-	    						<span class="count">0</span>
+	    						<span class="count">Carrito</span>
 	    					</a>
 							</li>
 						</ul>
@@ -225,25 +191,23 @@
 	        <li class="item-has-children">
 	          <a href="#0">Productos</a>
 	            <ul class="sub-menu">
-	              <li><a href="#0">Fitness</a></li>
-	              <li><a href="#0">Yoga</a></li>
-								<li><a href="#0">Otros Productos</a></li>
+								<li><a href="/fitness">Fitness</a></li>
+	              <li><a href="/yoga">Yoga</a></li>
+	              <li><a href="/OtrosProductos">Otros Productos</a></li>
 	            </ul>
 	          </li>
 	        </ul>
 
 	        <ul class="cd-navigation cd-single-item-wrapper">
-	          <li><a href="#">Home</a></li>
-	          <li><a href="#">Preguntas frecuentes</a></li>
-	          <li><a href="#">Catálogo</a></li>
-	          <li><a href="#">Registro</a></li>
-	          <li><a href="#">Login</a></li>
-	          <li><a href="#">Contacto</a></li>
+						<li><a href="/login">Login</a></li>
+	          <li><a href="/registro">Registrarse</a></li>
+	          <li><a href="/QA">Preguntas Frecuentes</a></li>
+	          <li><a href="/contacto">Contacto</a></li>
 	        </ul>
 
 	        <div class="cd-navigation socials">
-	          <a class="cd-twitter cd-img-replace" href="#0">Twitter</a>
-	          <a class="cd-facebook cd-img-replace" href="#0">Facebook</a>
+						<a class="cd-twitter cd-img-replace" href="https://twitter.com/shanti_bisu">Twitter</a>
+				    <a class="cd-facebook cd-img-replace" href="https://www.facebook.com/shantiinsumos33">Facebook</a>
 	        </div>
 	      </nav>
 
@@ -259,7 +223,7 @@
     </script>
 
   </body>
-	<script type='text/javascript' src='http://yogayfitness.com.ar/compras/wp-content/plugins/woocommerce/assets/js/frontend/price-slider.min.js?ver=3.4.5'></script>
+	{{-- <script type='text/javascript' src='http://yogayfitness.com.ar/compras/wp-content/plugins/woocommerce/assets/js/frontend/price-slider.min.js?ver=3.4.5'></script> --}}
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>

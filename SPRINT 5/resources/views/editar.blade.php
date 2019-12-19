@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shanti | Perfil</title>
 		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/reset.css"> 
+		<link rel="stylesheet" href="css/reset.css">
 		<script src="js/modernizr.js"></script>
 
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/vegas.min.css">
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">  
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.2/croppie.min.css">
 	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.2/croppie.js"></script>
@@ -28,19 +28,19 @@
 		<a id="cd-logo" href="index.html"><img src="img/logo.png" alt="Homepage"></a>
 		  <nav id="cd-top-nav">
 			  <ul>
-				<li><a href="/index">Home</a></li>
+				<li><a href="/home">Home</a></li>
 				<li><a>{{$usuario->nombre." ".$usuario->apellido}}</a></li>
 				<li><a class="" href="{{ route('logout') }}"
 					onclick="event.preventDefault();
 								  document.getElementById('logout-form').submit();">
 					 {{ __('Cerrar sesion') }}
 				 </a>
-	
+
 				 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
 					 @csrf
 				 </form>
 	</li>
-			  </ul> 	 	 
+			  </ul>
 		  </nav>
 		<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
 	  </header>
@@ -51,17 +51,17 @@
 						<form class="access-form-registro" action="/perfil" method="post" enctype="multipart/form-data">
 							@csrf
 							<h3 class="reg">Editar Datos de Usuario</h3>
-							
+
 							<br>
 							<ul style="color:red" class="errores">
 								@foreach ($errors->all() as $error)
 									<li>
 										{{$error}}
 									</li>
-									
+
 								@endforeach
-							</ul> 
-							
+							</ul>
+
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
 									  <span class="input-group-text" id="basic-addon1">Nombre:</span>
@@ -118,7 +118,7 @@
 										<div class="input-group-prepend">
 											<span class="input-group-text" id="basic-addon1">Localidad:</span>
 										</div>
-										<input type="text" class="form-control" placeholder="" name="localidad" id="localidad" value="{{$usuario->localidad}}">	
+										<input type="text" class="form-control" placeholder="" name="localidad" id="localidad" value="{{$usuario->localidad}}">
 									</div>
 									<div class="input-group mb-3">
 										<div class="input-group-prepend">
@@ -128,23 +128,23 @@
 										<span class="input-group-text" id="basic-addon1">Codigo Postal:</span>
 										<div class="input-group-prepend">
 										</div>
-										<input type="text" class="form-control" placeholder="" name="cp" id="cp" value="{{$usuario->cp}}">	
+										<input type="text" class="form-control" placeholder="" name="cp" id="cp" value="{{$usuario->cp}}">
 									</div>
 									<div class="product-image">
 										<label for="">Imagen:</label>
 										<input type="file" name="image" value="">
 									  </div>
-									
+
 									<!--CORTAR Y SUBIR IMAGEN-->
 									<!--<div class="row">
-										<div class="col-md-4 text-center">						
-										<div id="upload-demo"></div>							
-										</div>								
+										<div class="col-md-4 text-center">
+										<div id="upload-demo"></div>
+										</div>
 										<div class="col-md-4" style="padding:5%;">
-										<strong>Select image to crop:</strong>								
-										<input type="file" id="image" name="image">								
-										
-										</div>								
+										<strong>Select image to crop:</strong>
+										<input type="file" id="image" name="image">
+
+										</div>
 								     	</div>-->
 									<!---->
 									<div class="botones">
@@ -162,11 +162,9 @@
           <li class="item-has-children">
             <a href="#0">Productos</a>
             <ul class="sub-menu">
-              <li><a href="#0">1</a></li>
-              <li><a href="#0">2</a></li>
-              <li><a href="#0">3</a></li>
-              <li><a href="#0">4</a></li>
-              <li><a href="#0">5</a></li>
+							<li><a href="/fitness">Fitness</a></li>
+							<li><a href="/yoga">Yoga</a></li>
+							<li><a href="/OtrosProductos">Otros Productos</a></li>
             </ul>
           </li>
         </ul>
@@ -180,8 +178,8 @@
 
 
         <div class="cd-navigation socials">
-          <a class="cd-twitter cd-img-replace" href="#0">Twitter</a>
-          <a class="cd-facebook cd-img-replace" href="#0">Facebook</a>
+					<a class="cd-twitter cd-img-replace" href="https://twitter.com/shanti_bisu">Twitter</a>
+          <a class="cd-facebook cd-img-replace" href="https://www.facebook.com/shantiinsumos33">Facebook</a>
           </div>
    </nav>
 
@@ -190,103 +188,103 @@
 
 
 	$.ajaxSetup({
-	
+
 	  headers: {
-	
+
 		'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-	
+
 	  }
-	
+
 	});
-	
-	
-	
+
+
+
 	var resize = $('#upload-demo').croppie({
-	
+
 		enableExif: true,
-	
-		enableOrientation: true,    
-	
-		viewport: { 
-	
+
+		enableOrientation: true,
+
+		viewport: {
+
 			width: 200,
-	
+
 			height: 200,
-	
+
 			type: 'circle'
-	
+
 		},
-	
+
 		boundary: {
-	
+
 			width: 300,
-	
+
 			height: 300
-	
+
 		}
-	
+
 	});
-	
-	
-	
-	$('#image').on('change', function () { 
-	
+
+
+
+	$('#image').on('change', function () {
+
 	  var reader = new FileReader();
-	
+
 		reader.onload = function (e) {
-	
+
 		  resize.croppie('bind',{
-	
+
 			url: e.target.result
-	
+
 		  }).then(function(){
-	
+
 			console.log('jQuery bind complete');
-	
+
 		  });
-	
+
 		}
-	
+
 		reader.readAsDataURL(this.files[0]);
-	
+
 	});
-	
-	
-	
+
+
+
 	$('.upload').on('click', function (ev) {
-	
+
 	  resize.croppie('result', {
-	
+
 		type: 'canvas',
-	
+
 		size: 'viewport'
-	
+
 	  }).then(function (img) {
-	
+
 		$.ajax({
-	
+
 		  url: "{{route('upload.image')}}",
-	
+
 		  type: "POST",
-	
+
 		  data: {"image":img},
-	
+
 		  success: function (data) {
-	
+
 			html = '<img src="' + img + '" />';
-	
+
 			$("#preview-crop-image").html(html);
-	
+
 		  }
-	
+
 		});
-	
+
 	  });
-	
+
 	});
-	
-	
-	
+
+
+
 	</script>
 </body>
 

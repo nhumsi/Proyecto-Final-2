@@ -71,7 +71,7 @@ class FitnessController extends Controller
     public function detalleFitness($id)
     {
         $producto = Fitness::find($id);
-        
+
         return view('detalle', compact('producto'));
     }
 
@@ -80,7 +80,7 @@ class FitnessController extends Controller
         $buscar = $_GET['texto'];
 
         $producto = Productos::find($buscar);
-        
+
         $vars = compact('producto');
 
         return view('detalle', $vars);

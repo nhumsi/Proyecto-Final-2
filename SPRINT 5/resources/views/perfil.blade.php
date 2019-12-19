@@ -19,7 +19,7 @@
     <a id="cd-logo" href="index.html"><img src="img/logo.png" alt="Homepage"></a>
       <nav id="cd-top-nav">
           <ul>
-            <li><a href="/index">Home</a></li>
+            <li><a href="/home">Home</a></li>
             <li><a>{{$usuario->nombre." ".$usuario->apellido}}</a></li>
             <li><a class="" href="{{ route('logout') }}"
                 onclick="event.preventDefault();
@@ -31,16 +31,16 @@
                  @csrf
              </form>
 </li>
-          </ul> 	 	 
+          </ul>
       </nav>
     <a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
   </header>
     <main class="cd-main-content">
             <div id="menu-perfil" class="row justify-content-md-center">
                 <div id="nav-perfil" class="col col-lg-5">
-        
+
                       <h3 class="reg" style="color: white">Perfil del Usuario (<a href="/perfil/editar">Editar</a>)</h3>
-                      
+
                       <br>
                       <div class="row justify-content-md-center">
                       <img src="/storage/{{$usuario->image}}" alt="img-perfil" height="200" style="border-radius:100px" class="img-perfil">
@@ -80,7 +80,7 @@
                                 <span class="input-group-text" id="basic-addon1">Provincia:</span>
                                 <input type="text" style="background-color:white" class="form-control"  value="{{$usuario->provincia}}" readonly="readonly">
                                 <span class="input-group-text" id="basic-addon1">Localidad:</span>
-                                <input type="text" style="background-color:white" class="form-control"  value="{{$usuario->localidad}}" readonly="readonly">                          
+                                <input type="text" style="background-color:white" class="form-control"  value="{{$usuario->localidad}}" readonly="readonly">
                               </div>
                         </li>
 
@@ -93,7 +93,7 @@
                               </div>
                         </li>
                       </ul>
-                      
+
                 </div>
             </div>
     </main>
@@ -123,7 +123,7 @@
     <a class="cd-twitter cd-img-replace" href="#0">Twitter</a>
     <a class="cd-facebook cd-img-replace" href="#0">Facebook</a>
     </div>
-</nav>    
+</nav>
 </body>
 <script src="js/bootstrap.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
