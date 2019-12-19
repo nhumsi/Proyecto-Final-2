@@ -58,7 +58,7 @@
 							<h1 class="entry-title">Carrito</h1>
 						<div class="entry-content">
 						<div class="woocommerce">
-							<form class="woocommerce-cart-form" action="https://yogayfitness.com.ar/compras/carrito/" method="post">
+							<form class="woocommerce-cart-form" action="/carrito" method="post">
 								<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
 								<thead>
 									<tr>
@@ -79,7 +79,7 @@
 										<a href="https://yogayfitness.com.ar/compras/producto/aku-ball/"><img width="300" height="300" src="https://yogayfitness.com.ar/compras/wp-content/uploads/2017/05/pelota-con-pinches-aku-ball.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" /></a>
 									</td>
 									<td class="product-name" data-title="Producto">
-									<a href="https://yogayfitness.com.ar/compras/producto/aku-ball/">AKU BALL</a>
+									<a href="css/img/aku ball">AKU BALL</a>
 									</td>
 
 									<td class="product-price" data-title="Precio">
@@ -110,14 +110,14 @@
 								</tr>
 								<tr class="woocommerce-cart-form__cart-item cart_item">
 								<td class="product-remove">
-									<a href="https://yogayfitness.com.ar/compras/carrito/?remove_item=202cb962ac59075b964b07152d234b70&#038;_wpnonce=7173307061" class="remove" aria-label="Borrar este artículo" data-product_id="123" data-product_sku="">&times;</a>
+									<a href="/fitness" class="remove" aria-label="Borrar este artículo" data-product_id="123" data-product_sku="">&times;</a>
 								</td>
 								<td class="product-thumbnail">
-								<a href="https://yogayfitness.com.ar/compras/producto/almohada-termica/">
+								<a href="css/img/lumbar.jpg">
 									<img width="300" height="199" src="/fitness" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" /></a>
 								</td>
 								<td class="product-name" data-title="Producto">
-								<a href="/fitness">ALMOHADA TERMICA</a>
+								<a href="css/img/lumbar.jpg">ALMOHADA TERMICA</a>
 								</td>
 								<td class="product-price" data-title="Precio">
 									<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>620.00</span>
