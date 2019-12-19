@@ -13,13 +13,5 @@
     <p>Nombre : {{ $actor->first_name }}</p>
     <p>Apellido : {{ $actor->last_name}}</p>
     <p> Rating  : {{ $actor->rating }}</p>
-    <p>
-        Peliculas :
-        <ul>
-        @foreach( $actor->peliculas as $peli)
-            <li> {{ $peli->title }} </li>
-        @endforeach
-        </ul>
-    </p>
 </body>
 </html>

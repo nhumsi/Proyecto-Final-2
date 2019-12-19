@@ -38,40 +38,4 @@ class ActorController extends Controller
 
         return view('actores', $vars);
     }
-
-    public function nuevo()
-    {
-        return view('actorsadd');
-    }
-    public function edit($id)
-    {
-        $actor = Actor::find( $id );
-
-        $vars = compact('actor');
-
-        return view('actoredit', $vars);
-    }
-    public function store(Request $req)
-    {
-        $actor = new Actor();
-        $actor->first_name = $req['first_name'];
-        $actor->last_name = $req['last_name'];
-        $actor->rating = $req['rating'];
-
-        $actor->save();
-
-        return redirect("/actores");
-    }
-    public function update(Request $req , $id)
-    {
-        $actor = Actor::find( $id );
-        // dd($actor);
-        $actor->first_name = $req['first_name'];
-        $actor->last_name = $req['last_name'];
-        $actor->rating = $req['rating'];
-
-        $actor->save();
-
-        return redirect("/actor/$id");
-    }
 }

@@ -8,17 +8,10 @@
     <title>Peliciulas</title>
 </head>
 <body>
+    {{  var_dump ($peli) }}
     <h1> Detalle </h1>
     <h2> Titutlo {{ $peli->title }} - rating {{ $peli->rating }} </h2>
-    <p>
-        Actores :
-        <ul>
-        @foreach( $peli->actores as $actor)
-            <li> {{ $actor->getNombreCompleto() }} </li>
-        @endforeach
-        </ul>
-    </p>
-    <img src="/storage/Vs00XlgpCRNQS0xIqGFd5A55eQOb3yODEFfZEYFK.jpeg" alt="">
+
 
 </body>
 </html>

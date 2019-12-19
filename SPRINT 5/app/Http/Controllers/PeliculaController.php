@@ -17,7 +17,7 @@ class PeliculaController extends Controller
         //     ['Peli cinco', 43],
         // ];
         $pelis = Pelicula::all();
-        // dd($pelis);
+        dd($pelis);
         $vars = compact('pelis');
         return view('peliculas', $vars);
     }
@@ -43,20 +43,5 @@ class PeliculaController extends Controller
         // dd($pelis);
         $vars = compact('pelis');
         return view('peliculas', $vars);
-    }
-
-    public function nueva()
-    {
-        return view('nueva-pelicula');
-    }
-    public function store(Request  $req)
-    {
-        $peli = new Pelicula();
-        $path = $req->file('poster')->store('public');
-        $name = basename( $path );
-        $peli->poster = $name;
-        $peli->save();
-        dd($name);
-        return redirect('/pelicula/nueva');
     }
 }

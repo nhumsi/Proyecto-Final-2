@@ -35,7 +35,7 @@
 			<section class="form-container-registro">
 				<div class="row justify-content-md-center">
 					<div class="col col-lg-6">
-						<form class="access-form-registro" action="/ABM/guardar" method="post" enctype="multipart/form-data">
+					<form class="access-form-registro" action="/ABM/editar" method="post" enctype="multipart/form-data">
 							@csrf
 							<h3 class="reg">Carga de Productos</h3>
 
@@ -52,31 +52,31 @@
 									<div class="input-group-prepend">
 										  <span class="input-group-text" id="basic-addon1">Nombre de producto:</span>
 									</div>
-										<input type="text" class="form-control" name="nombre" id="nombre" value="{{$producto->Nombre}}">
+								<input type="text" class="form-control" name="nombre" id="nombre" value="{{$producto->nombre}}">
 										{{-- <span class="input-group-text" id="basic-addon1">Debe tener 5 caracteres mínimo</span> --}}
-							</div>
+								</div>
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
 									  <span class="input-group-text" id="basic-addon1">Color:</span>
 						    	</div>
-								    <input type="text" class="form-control" placeholder="Color" name="color" id="color" value="{{old("color")}}">
+								    <input type="text" class="form-control"  name="color" id="color" value="{{$producto->color}}">
 									{{-- <span class="input-group-text" id="basic-addon1">Debe tener 6 caracteres mínimo</span> --}}
 							</div>
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
 									  <span class="input-group-text" id="basic-addon1">Precio:</span>
 						    	</div>
-	                 <input type="number" id="precio" name="precio" placeholder="precio" value="">
+							<input type="text" id="precio" name="precio" value="{{$producto->precio}}">
 								</div>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">Stock:</span>
                     </div>
-                     <input type="number" id="stock" name="stock" placeholder="stock" value="">
+				<input type="text" id="stock" name="stock"  value="{{$producto->stock}}">
                   </div>
                 <div class="field-group">
                         <p for="msg">Descripción:</p>
-                        <textarea name="Descripcion" id="descripcion" rows="8" cols="40">Inserte descipción</textarea>
+				<textarea name="Descripcion" id="descripcion" rows="8" cols="40" value="{{$producto->descripcion}}"></textarea>
                 </div>
                 <br>
                 <div class="product-image">

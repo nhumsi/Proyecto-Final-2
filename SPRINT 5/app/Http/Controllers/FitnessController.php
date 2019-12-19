@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Productos;
 use App\Fitness;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
@@ -50,7 +50,7 @@ class FitnessController extends Controller
 
         $this->validate($req, $cond, $msj);
 
-        $productoNuevo = new Fitness();
+        $productoNuevo = new Productos();
 
         $ruta = $req -> file ("image") -> store("public");
         $nombreArchivo = basename($ruta);
@@ -75,5 +75,30 @@ class FitnessController extends Controller
         return view('detalle', compact('producto'));
     }
 
+    public function buscar()
+    {
+        $buscar = $_GET['texto'];
 
-}
+        $producto = Productos::find($buscar);
+        
+        $vars = compact('producto');
+
+        return view('detalle', $vars);
+    }
+
+    public function editar($id){
+        $productoNuevo = Productos::find($id);
+
+        $ruta = $req -> file ("image") -> store("public");
+        $nombreArchivo = basename($ruta);
+
+        $productoNuevo-> nombre = $req["nombre"];
+        $productoNuevo-> color = $req["color"];
+        $productoNuevo-> precio = $req["precio"];
+        $productoNuevo-> stock = $req["stock"];
+        $productoNuevo-> image = $nombreArchivo;
+
+        $productoNuevo->save();
+
+    }
+    }

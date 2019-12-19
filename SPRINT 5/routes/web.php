@@ -49,13 +49,12 @@ Route::get('/ABM',function(){
     return view('ABM');
 });
 
-Route::get('/ABM/fitness/{id}', 'FitnessController@detalleFitness');
-Route::get('/ABM/yoga/{id}', 'FitnessController@detalleYoga');
-Route::get('/ABM/otros/{id}', 'FitnessController@detalleOtros   ');
+Route::get('/ABM/buscar', "FitnessController@buscar");
+Route::get('/ABM/{id}', 'FitnessController@detalle');
+Route::post('/ABM/guardar', 'FitnessController@guardar');
+Route::post('/ABM/editar', 'FitnessController@editar');
 
-Route::post('/ABM/fitness/{id}', 'FitnessController@editarFitness');
-Route::post('/ABM/yoga/{id}', 'FitnessController@editarYoga');
-Route::post('/ABM/otros/{id}', 'FitnessController@editarOtros');
+
 
 
 

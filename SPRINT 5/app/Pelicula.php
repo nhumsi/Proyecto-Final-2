@@ -10,9 +10,4 @@ class Pelicula extends Model
     // public $primaryKey = "id";
     // public $timestamps = false;
     public $guarded = [];
-
-    public function actores()
-    {
-        return $this->belongsToMany("App\Actor", "actor_movie", "movie_id", "actor_id" );
-    }
 }

@@ -89,6 +89,13 @@
 										<button type="reset" class="btn btn-secondary btn-lg">Borrar</button>
 									</div>
 								</form>
+								<div>
+									<form method="get" action="/ABM/buscar">
+										<label for="buscar"> Buscar producto</label>
+										<input type="text" id="buscar" name="texto" placeholder="nombre del producto..">
+										<button type="submit"> Buscar </button>
+									</form>
+								</div>
 							</div>
 						</div>
 					</section>
