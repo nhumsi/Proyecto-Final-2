@@ -59,6 +59,7 @@ class FitnessController extends Controller
         $productoNuevo-> color = $req["color"];
         $productoNuevo-> precio = $req["precio"];
         $productoNuevo-> stock = $req["stock"];
+        $productoNuevo-> categoria = $req["categoria"];
         $productoNuevo-> image = $nombreArchivo;
 
         $productoNuevo->save();
@@ -86,7 +87,7 @@ class FitnessController extends Controller
         return view('detalle', $vars);
     }
 
-    public function editar($id){
+    public function editar(Request $req, $id){
         $productoNuevo = Productos::find($id);
 
         $ruta = $req -> file ("image") -> store("public");
@@ -96,9 +97,22 @@ class FitnessController extends Controller
         $productoNuevo-> color = $req["color"];
         $productoNuevo-> precio = $req["precio"];
         $productoNuevo-> stock = $req["stock"];
+        $productoNuevo-> categoria = $req["categoria"];
         $productoNuevo-> image = $nombreArchivo;
 
         $productoNuevo->save();
 
+        return redirect('/ABM');
     }
+
+    public function borrar($id) {
+
+        $productoABorrar = Productos::find($id);
+
+        $productoABorrar-> delete();
+
+        return redirect('/ABM');
+    }
+
+
     }

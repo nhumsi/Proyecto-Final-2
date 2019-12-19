@@ -55,7 +55,8 @@ Route::get('/ABM',function(){
 Route::get('/ABM/buscar', "FitnessController@buscar");
 Route::get('/ABM/{id}', 'FitnessController@detalle');
 Route::post('/ABM/guardar', 'FitnessController@guardar');
-Route::post('/ABM/editar', 'FitnessController@editar');
+Route::post('/ABM/editar/{id}', 'FitnessController@editar');
+Route::post('/ABM/borrar/{id}', 'FitnessController@borrar');
 
 
 

@@ -35,7 +35,7 @@
 			<section class="form-container-registro">
 				<div class="row justify-content-md-center">
 					<div class="col col-lg-6">
-					<form class="access-form-registro" action="/ABM/editar" method="post" enctype="multipart/form-data">
+					<form class="access-form-registro" action="/ABM/editar/{{$producto->id}}" method="post" enctype="multipart/form-data">
 							@csrf
 							<h3 class="reg">Carga de Productos</h3>
 
@@ -52,31 +52,41 @@
 									<div class="input-group-prepend">
 										  <span class="input-group-text" id="basic-addon1">Nombre de producto:</span>
 									</div>
-								<input type="text" class="form-control" name="nombre" id="nombre" value="{{$producto->nombre}}">
+								<input type="text" class="form-control" name="nombre" id="nombre" value="@isset($producto){{$producto->nombre}}@endisset">
 										{{-- <span class="input-group-text" id="basic-addon1">Debe tener 5 caracteres mínimo</span> --}}
 								</div>
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
 									  <span class="input-group-text" id="basic-addon1">Color:</span>
 						    	</div>
-								    <input type="text" class="form-control"  name="color" id="color" value="{{$producto->color}}">
+								    <input type="text" class="form-control"  name="color" id="color" value="@isset($producto){{$producto->color}}@endisset">
 									{{-- <span class="input-group-text" id="basic-addon1">Debe tener 6 caracteres mínimo</span> --}}
 							</div>
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
 									  <span class="input-group-text" id="basic-addon1">Precio:</span>
 						    	</div>
-							<input type="text" id="precio" name="precio" value="{{$producto->precio}}">
+							<input type="text" id="precio" name="precio" value="@isset($producto){{$producto->precio}}@endisset">
 								</div>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">Stock:</span>
                     </div>
-				<input type="text" id="stock" name="stock"  value="{{$producto->stock}}">
-                  </div>
+				<input type="text" id="stock" name="stock"  value="@isset($producto){{$producto->stock}}@endisset">
+				  </div>
+				  <div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="basic-addon1">Categoria:</span>
+					  </div>
+					  <select name="categoria" id="categoria">
+						<option value="Fitness"@if(($producto->categoria)=="Fitness") selected @endif>Fitness</option>
+						<option value="Yoga"@if(($producto->categoria)=="Yoga") selected @endif>Yoga</option>
+						<option value="Otros"@if(($producto->categoria)=="Otros") selected @endif>Otros</option>
+					</select>
+					</div>
                 <div class="field-group">
                         <p for="msg">Descripción:</p>
-				<textarea name="Descripcion" id="descripcion" rows="8" cols="40" value="{{$producto->descripcion}}"></textarea>
+				<textarea name="Descripcion" id="descripcion" rows="8" cols="40" value="@isset($producto){{$producto->descripcion}}@endisset"></textarea>
                 </div>
                 <br>
                 <div class="product-image">
@@ -85,10 +95,13 @@
                 </div>
                 <br>
 									<div class="botones">
-										<button type="submit" class="btn btn-lg btn-primary">Cargar</button>
-										<button type="reset" class="btn btn-secondary btn-lg">Borrar</button>
-									</div>
-								</form>
+										<button id="enviar" type="submit" class="btn btn-lg btn-primary">Guardar</button>
+									</form>
+								</div>
+									<form class="borrar" action="/ABM/borrar/{{$producto->id}}" method="POST">
+										@csrf
+										<button type="submit" class="btn btn-danger btn-lg">Borrar</button>
+									</form>
 							</div>
 						</div>
 					</section>

@@ -78,7 +78,22 @@
                       <span class="input-group-text" id="basic-addon1">Stock:</span>
                     </div>
                      <input type="number" id="stock" name="stock" placeholder="stock" value="">
-                  </div>
+				  </div>
+				  <div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="basic-addon1">Stock:</span>
+					  </div>
+					  <select name="categoria" id="categoria">
+						<option value="Fitness">Fitness</option>
+						<option value="Yoga">Yoga</option>
+						<option value="Otros">Otros</option>
+					</select>
+					</div>
+				  {{-- <select name="categoria" id="categoria">
+					<option value="Fitness">Fitness</option>
+					<option value="Yoga">Yoga</option>
+					<option value="Otros">Otros</option>
+				</select> --}}
                 <div class="field-group">
                         <p for="msg">Descripción:</p>
                         <textarea name="Descripcion" id="descripcion" rows="8" cols="40">Inserte descipción</textarea>
@@ -96,9 +111,13 @@
 								</form>
 								<div>
 									<form method="get" action="/ABM/buscar">
-										<label for="buscar"> Buscar producto</label>
-										<input type="text" id="buscar" name="texto" placeholder="nombre del producto..">
-										<button type="submit"> Buscar </button>
+										<div class="input-group mb-3">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="basic-addon1">Buscar producto</span>
+											  </div>
+											  <input type="text" id="buscar" name="texto" placeholder="Ingrese ID del producto..">
+											  <button type="submit" class="abm"> Buscar </button>
+											</div>
 									</form>
 								</div>
 							</div>
